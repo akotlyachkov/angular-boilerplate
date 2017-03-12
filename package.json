@@ -1,0 +1,47 @@
+{
+  "name": "angular2-webpack2",
+  "version": "1.0.0",
+  "description": "angular2 sample app build with webpack2",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akotlyachkov/angular2-webpack2.git"
+  },
+  "keywords": [
+    "angular2",
+    "webpack2",
+    "sample"
+  ],
+  "author": "akotlyachkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akotlyachkov/angular2-webpack2/issues"
+  },
+  "homepage": "https://github.com/akotlyachkov/angular2-webpack2#readme",
+  "dependencies": {
+    "@angular/common": "^2.4.0",
+    "@angular/compiler": "^2.4.0",
+    "@angular/core": "^2.4.0",
+    "@angular/forms": "^2.4.0",
+    "@angular/http": "^2.4.0",
+    "@angular/platform-browser": "^2.4.0",
+    "@angular/platform-browser-dynamic": "^2.4.0",
+    "@angular/router": "^3.4.0",
+    "compression": "^1.6.2",
+    "core-js": "^2.4.1",
+    "express": "^4.14.0",
+    "helmet": "^3.1.0",
+    "rxjs": "^5.2.0",
+    "zone.js": "^0.8.0"
+  },
+  "devDependencies": {
+    "@types/core-js": "^0.9.34",
+    "@types/node": "^6.0.46",
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "github:fortawesome/Font-Awesome",
+    "typescript": "^2.2.1"
+  }
+}
