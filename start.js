@@ -6,7 +6,6 @@ const express = require('express'),
     app = express(),
     http = require('http'),
     server = http.createServer(app),
-    io = require('socket.io')(server),
     config = require('./config'),
     serverApp = require('./server'),
     clientApp = require('./client');

@@ -1,26 +1,27 @@
 const express = require('express'),
-    helmet = require('helmet'),
-    path = require('path'),
-    compression = require('compression'),
-    bodyParser = require('body-parser'),
     app = express(),
-    http = require('http'),
-    server = http.createServer(app),
-    io = require('socket.io')(server),
-    config = require('./config'),
-    adminApp = require('./admin/application'),
-    clientApp = require('./client/application');
+    config = require('./config');
 
-app.use(helmet());
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
-app.use(compression());
-
-app.use('/admin', adminApp);
-app.use('/', clientApp);
-
-app.set('port', process.env.PORT || config.system.port || '3000');
-
-server.listen(app.get('port'), function () {
-    console.log('Приложение запущено http://localhost:3000 порт:' + app.get('port'));
+app.use('/config', function (req, res, next) {
+    res.send({config: true});
 });
+
+app.use('/test', function (req, res, next) {
+    res.send({test: true});
+});
+
+app.use(function (req, res, next) {
+    console.error("сработало 404");
+    res.send({'not-found': true});
+});
+
+app.use(function (err, req, res, next) {
+    console.error(err.message);
+    console.error(err.stack);
+    err.userMessage = err.userMessage || 'На сервере произошла ошибка';
+    if (res.status() == 200)
+        res.status(500);
+    res.send({'server-error': true});
+});
+
+module.exports = app;

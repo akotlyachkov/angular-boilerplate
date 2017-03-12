@@ -3,7 +3,7 @@ import {Component} from "@angular/core";
 
 @Component({
     moduleId: module.id,
-    selector: 'market',
+    selector: 'app-content',
     host:{'class':'sticky-content'},
     template: `<router-outlet></router-outlet>`
 })

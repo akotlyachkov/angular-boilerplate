@@ -1,3 +1,6 @@
 {
-    "global-param": "global-test-value"
+    "global-param": "global-test-value",
+    "system":{
+        "port":3000
+    }
 }
