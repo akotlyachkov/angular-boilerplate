@@ -3,7 +3,6 @@ import {Control1Control} from "../../controls/control1/control1";
 
 
 @Component({
-    moduleId: module.id,
     selector: 'page1',
     templateUrl: 'page1.html'
 })

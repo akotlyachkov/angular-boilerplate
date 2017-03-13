@@ -3,9 +3,8 @@ import {User} from "../../entities/user";
 import {CommunicateService} from "../../services/communicate";
 
 @Component({
-    moduleId: module.id,
     selector: 'control2',
-    styleUrls:['control1.scss'],
+    styleUrls:['control2.scss'],
     templateUrl: 'control2.html'
 })
 export class Control2Control {

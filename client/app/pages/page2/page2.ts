@@ -5,7 +5,6 @@ import {User} from "../../entities/user";
 
 
 @Component({
-    moduleId: module.id,
     selector: 'page2',
     templateUrl: 'page2.html'
 })

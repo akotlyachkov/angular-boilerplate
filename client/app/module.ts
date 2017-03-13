@@ -1,5 +1,5 @@
 import {NgModule} from "@angular/core";
-import {DefaultLayout} from "./controls/layouts/default";
+import {DefaultLayout} from "./layouts/default";
 import {BrowserModule} from "@angular/platform-browser";
 import {PagesModule} from "./pages/module";
 import {ControlsModule} from "./controls/module";
@@ -11,7 +11,6 @@ import {RoutingModule} from "./routes";
     ],
     imports: [
         BrowserModule,
-        ControlsModule,
         PagesModule,
         RoutingModule
     ],
