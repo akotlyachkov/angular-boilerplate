@@ -1,6 +1,4 @@
-import 'zone.js'
-import 'reflect-metadata'
-import 'rxjs';
+
 
 import '@angular/platform-browser';
 import '@angular/platform-browser-dynamic';
@@ -9,7 +7,5 @@ import '@angular/common';
 import '@angular/http';
 import '@angular/router';
 
-// RxJS
 
-import '../styles/bootstrap.scss'
-import '../styles/awesome.scss'
+

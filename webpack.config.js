@@ -1,12 +1,12 @@
 const webpack = require('webpack'),
-    HtmlWebpackPlugin = require('html-webpack-plugin'),
-    ExtractTextPlugin = require('extract-text-webpack-plugin'),
     path = require('path');
 
 module.exports = {
     entry: {
         app: './client/app/index.ts',
-        vendors: './client/app/vendors.ts'
+        libs: './client/app/libs.ts',
+        angular: './client/app/angular.ts',
+        styles: './client/app/styles.ts'
     },
 
     output: {
@@ -17,32 +17,53 @@ module.exports = {
         rules: [
             {
                 test: /\.ts$/,
-                loaders: ['awesome-typescript-loader','angular2-template-loader'],
+                loaders: [{
+                    loader: 'awesome-typescript-loader',
+                    options: {
+                        transpileOnly: true
+                    }
+                }, 'angular2-template-loader'],
                 exclude: /node_modules/,
             },
             {
                 test: /\.scss$/,
                 //loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: ['css-loader', 'sass-loader'] })
-                loaders: ['raw-loader', 'sass-loader'],
+                loaders: [{
+                    loader: 'css-loader',
+                    options: {minimize: true}
+                }, 'sass-loader'],
+            },
+            {
+                test: /\.woff$/,
+                loader: 'base64-font-loader',//?name=assets/[name].[hash].[ext]
+
             },
             {
                 test: /\.html$/,
-                loader: 'html-loader'
+                loader: 'html-loader',
+                options: {
+                    minimize: true
+                }
             }
         ]
     },
-    plugins:[
-new ExtractTextPlugin('testik.css'),
+    plugins: [
         new webpack.ContextReplacementPlugin(
             /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
-            __dirname
+           path.join(__dirname,'client/app')
         ),
         new webpack.optimize.CommonsChunkPlugin({
-            name: ['app', 'vendors']
+            name: [
+                'common',
+                'app',
+                'libs',
+                'angular',
+                'styles'
+            ]
         })
     ],
     resolve: {
-        extensions: ['.ts','.scss','.html','.js','.css']
+        extensions: ['.ts', '.scss', '.html', '.js', '.css', '.woff']
     },
-    devtool: 'inline-source-map',
+    //devtool: 'inline-source-map',
 };

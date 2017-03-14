@@ -7,6 +7,7 @@ const express = require('express'),
 app.use('/', express.static(path.join(__dirname, 'build')));
 app.use('/', express.static(path.join(__dirname, 'favicon')));
 app.use('/', express.static(path.join(__dirname, 'images')));
+app.use('/', express.static(path.join(__dirname, 'fonts')));
 app.use('/', function (req, res, next) {
     res.sendFile('index.html', {root: __dirname});
 });
