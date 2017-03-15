@@ -2,8 +2,6 @@
     "compilerOptions": {
         "target": "es5",
         "module": "es6",
-        "inlineSourceMap":true,
-        "inlineSources":true,
         "moduleResolution": "node",
         "outDir": "./test",
         "emitDecoratorMetadata": true,

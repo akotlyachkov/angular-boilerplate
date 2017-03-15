@@ -4,7 +4,8 @@
   "description": "angular2 sample app build with webpack2",
   "main": "start.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack --watch"
   },
   "repository": {
     "type": "git",

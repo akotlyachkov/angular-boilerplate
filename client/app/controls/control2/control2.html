@@ -1,6 +1,8 @@
 <div class="ctrl2">
     <h2>Контрол 2</h2>
-    <button (click)="clickHandler()">Евент</button>
-    <input type="text" [(ngModel)]="model.name"/>
-    <button (click)="clickReactiveHandler()">Реактив</button>
+    <div class="form-inline">
+        <button class="btn btn-default" (click)="clickHandler()">Евент</button>
+        <input class="form-control" type="text" [(ngModel)]="model.name"/>
+        <button class="btn btn-default" (click)="clickReactiveHandler()">Реактив</button>
+    </div>
 </div>

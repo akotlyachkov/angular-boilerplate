@@ -4,6 +4,8 @@ import {BrowserModule} from "@angular/platform-browser";
 import {PagesModule} from "./pages/module";
 import {ControlsModule} from "./controls/module";
 import {RoutingModule} from "./routes";
+import {FormsModule} from "@angular/forms";
+import {CommunicateService} from "./services/communicate";
 
 @NgModule({
     declarations: [
@@ -11,10 +13,11 @@ import {RoutingModule} from "./routes";
     ],
     imports: [
         BrowserModule,
+
         PagesModule,
         RoutingModule
     ],
-    providers: [],
+    providers: [CommunicateService],
     bootstrap: [
         DefaultLayout
     ]

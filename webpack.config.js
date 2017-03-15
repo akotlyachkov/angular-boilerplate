@@ -27,22 +27,24 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                //loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: ['css-loader', 'sass-loader'] })
-                loaders: [{
-                    loader: 'css-loader',
-                    options: {minimize: true}
-                }, 'sass-loader'],
+                include: path.join(__dirname,'client/app'),
+                loaders: ['raw-loader', 'sass-loader'],
+            },
+            {
+                test: /\.scss$/,
+                include: path.join(__dirname,'client/styles'),
+                loaders: ['style-loader', 'css-loader','sass-loader'],
             },
             {
                 test: /\.woff$/,
-                loader: 'base64-font-loader',//?name=assets/[name].[hash].[ext]
+                loader: 'base64-font-loader',
 
             },
             {
                 test: /\.html$/,
                 loader: 'html-loader',
                 options: {
-                    minimize: true
+                    minimize: false
                 }
             }
         ]
@@ -53,17 +55,17 @@ module.exports = {
            path.join(__dirname,'client/app')
         ),
         new webpack.optimize.CommonsChunkPlugin({
-            name: [
-                'common',
+            name:'common',
+            minChunks: 2,
+            chunks: [
                 'app',
                 'libs',
-                'angular',
-                'styles'
+                'angular'
             ]
         })
     ],
     resolve: {
         extensions: ['.ts', '.scss', '.html', '.js', '.css', '.woff']
     },
-    //devtool: 'inline-source-map',
+    devtool: 'source-map',
 };
