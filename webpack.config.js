@@ -37,14 +37,14 @@ module.exports = {
                 test: /\.woff$/,
                 loader: 'base64-font-loader',
 
-            },
+            },*/
             {
                 test: /\.html$/,
                 loader: 'html-loader',
                 options: {
                     minimize: false
                 }
-            }*/
+            }
         ]
     },
     plugins: [
@@ -62,7 +62,7 @@ module.exports = {
         })
     ],
     resolve: {
-        extensions: ['.ts' ]
+        extensions: ['.ts','.js','.html' ]
     },
     devtool: 'source-map',
 };

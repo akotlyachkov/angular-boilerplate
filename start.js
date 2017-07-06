@@ -21,5 +21,5 @@ app.use('/', clientApp);
 app.set('port', process.env.PORT || config.system.port || '3000');
 
 server.listen(app.get('port'), function () {
-    console.log('Тестовое приложение запущено http://localhost:3000 порт:' + app.get('port'));
+    console.log(`Приложение запущено http://localhost:${app.get('port')}`  );
 });
