@@ -1,10 +1,9 @@
 import {Component} from "@angular/core";
 
-
 @Component({
-    selector: 'app-content',
+    selector: 'application',
     host:{'class':'sticky-content'},
-    template: `<router-outlet></router-outlet>`
+    templateUrl: 'default.html'
 })
 export class DefaultLayout {
 

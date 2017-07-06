@@ -4,7 +4,6 @@ import {CommunicateService} from "../../services/communicate";
 
 @Component({
     selector: 'control2',
-    styleUrls:['control2.scss'],
     templateUrl: 'control2.html'
 })
 export class Control2Control {

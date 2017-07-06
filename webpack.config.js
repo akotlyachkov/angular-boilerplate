@@ -4,9 +4,7 @@ const webpack = require('webpack'),
 module.exports = {
     entry: {
         app: './client/app/index.ts',
-        libs: './client/app/libs.ts',
-        angular: './client/app/angular.ts',
-        styles: './client/app/styles.ts'
+        libs: './client/app/libs.ts'
     },
 
     output: {
@@ -25,7 +23,7 @@ module.exports = {
                 }, 'angular2-template-loader'],
                 exclude: /node_modules/,
             },
-            {
+            /*{
                 test: /\.scss$/,
                 include: path.join(__dirname,'client/app'),
                 loaders: ['raw-loader', 'sass-loader'],
@@ -46,7 +44,7 @@ module.exports = {
                 options: {
                     minimize: false
                 }
-            }
+            }*/
         ]
     },
     plugins: [
@@ -59,13 +57,12 @@ module.exports = {
             minChunks: 2,
             chunks: [
                 'app',
-                'libs',
-                'angular'
+                'libs'
             ]
         })
     ],
     resolve: {
-        extensions: ['.ts', '.scss', '.html', '.js', '.css', '.woff']
+        extensions: ['.ts' ]
     },
     devtool: 'source-map',
 };

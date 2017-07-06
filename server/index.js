@@ -2,11 +2,11 @@ const express = require('express'),
     app = express(),
     config = require('./config');
 
-app.use('/config', function (req, res, next) {
+app.get('/config', function (req, res, next) {
     res.send({config: true});
 });
 
-app.use('/test', function (req, res, next) {
+app.post('/test', function (req, res, next) {
     res.send({test: true});
 });
 

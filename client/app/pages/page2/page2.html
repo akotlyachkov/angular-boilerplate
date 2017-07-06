@@ -1,7 +1,12 @@
 <div class="container">
     <div class="row">
-        <h1>Страница 2</h1>
-        <control2 (onClick)="testik($event)"></control2>
-        <p>Получил через сервис: <span>{{model.name}}</span></p>
+        <div class="col-xs-12">
+            <h2>Страница 2</h2>
+            <control2 (onClick)="testik($event)"></control2>
+            <p>Получил через сервис: <span>{{model.name}}</span></p>
+            <a routerLink="./subpage3" routerLinkActive="active">подпейдж 3</a>
+            <a routerLink="./subpage4" routerLinkActive="active">подпейдж 4</a>
+            <router-outlet></router-outlet>
+        </div>
     </div>
 </div>

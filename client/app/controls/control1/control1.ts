@@ -1,11 +1,9 @@
 import {Component, Input} from "@angular/core";
 import {CommunicateService} from "../../services/communicate";
 
-
-
 @Component({
     selector: 'control1',
-    styleUrls:['control1.scss'],
+
     templateUrl: 'control1.html'
 })
 export class Control1Control {

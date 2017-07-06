@@ -1,5 +1,0 @@
-import '../styles/bootstrap.scss'
-import '../styles/awesome.scss'
-import '../styles/roboto.scss'
-import '../styles/common.scss'
-import '../styles/sticky.scss'

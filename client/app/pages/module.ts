@@ -4,11 +4,13 @@ import {Page2Page} from "./page2/page2";
 import {IndexPage} from "./index/index";
 import {ControlsModule} from "../controls/module";
 import {RouterModule} from "@angular/router";
+import {Page3Page} from "./page3/page3";
 @NgModule({
     declarations: [
         IndexPage,
         Page1Page,
-        Page2Page
+        Page2Page,
+        Page3Page
     ],
     imports: [
         RouterModule,
@@ -17,7 +19,8 @@ import {RouterModule} from "@angular/router";
     exports: [
         IndexPage,
         Page1Page,
-        Page2Page
+        Page2Page,
+        Page3Page
     ]
 })
 export class PagesModule {
