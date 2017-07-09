@@ -17,6 +17,7 @@
         ]
     },
     "include": [
-        "client/app/index.ts"
+        "client/app/index.ts",
+        "client/app/libs.ts"
     ]
 }

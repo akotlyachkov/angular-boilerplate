@@ -3,8 +3,8 @@ const webpack = require('webpack'),
 
 module.exports = {
     entry: {
-        app: './client/app/index.ts',
-        libs: './client/app/libs.ts'
+        app: './client/app/index.js',
+        libs: './client/app/libs.js'
     },
 
     output: {
@@ -13,7 +13,7 @@ module.exports = {
     },
     module: {
         rules: [
-            {
+            /*{
                 test: /\.ts$/,
                 loaders: [{
                     loader: 'awesome-typescript-loader',
@@ -22,6 +22,11 @@ module.exports = {
                     }
                 }, 'angular2-template-loader'],
                 exclude: /node_modules/,
+            },*/
+            {
+                test: /\.js$/,
+                loaders: ['angular2-template-loader'],
+                include: path.join(__dirname,'client/app'),
             },
             /*{
                 test: /\.scss$/,
@@ -62,7 +67,7 @@ module.exports = {
         })
     ],
     resolve: {
-        extensions: ['.ts','.js','.html' ]
+        extensions: ['.js','.html' ]
     },
     devtool: 'source-map',
 };

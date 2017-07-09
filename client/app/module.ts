@@ -1,11 +1,11 @@
 import {NgModule} from "@angular/core";
-import {DefaultLayout} from "./layouts/default";
+import {DefaultLayout} from "./layouts/default/default";
 import {BrowserModule} from "@angular/platform-browser";
 import {PagesModule} from "./pages/module";
 import {RoutingModule} from "./routes";
 import {CommunicateService} from "./services/communicate";
-import {Master1Layout} from "./layouts/master1";
-import {Master2Layout} from "./layouts/master2";
+import {Master1Layout} from "./layouts/master1/master1";
+import {Master2Layout} from "./layouts/master2/master2";
 import {ControlsModule} from "./controls/module";
 
 @NgModule({

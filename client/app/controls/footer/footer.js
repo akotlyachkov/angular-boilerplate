@@ -5,12 +5,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 import { Component } from "@angular/core";
-let MenuControl = class MenuControl {
+let FooterComponent = class FooterComponent {
 };
-MenuControl = __decorate([
+FooterComponent = __decorate([
     Component({
-        selector: 'menus',
-        templateUrl: 'menu.html'
+        selector: 'footer',
+        templateUrl: 'footer.html'
     })
-], MenuControl);
-export { MenuControl };
+], FooterComponent);
+export { FooterComponent };

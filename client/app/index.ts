@@ -1,3 +1,7 @@
+// import 'zone.js'
+// import 'reflect-metadata'
+// import 'rxjs';
+
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {InitModule} from "./module";
 import {enableProdMode} from "@angular/core";
