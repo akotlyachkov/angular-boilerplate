@@ -30,6 +30,7 @@ gulp.task('styles', function () {
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('client/build'))
 });
+
 gulp.task('watch',function () {
    return gulp.watch(styles, ['styles'])
 })
