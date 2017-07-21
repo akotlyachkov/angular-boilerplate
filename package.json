@@ -9,7 +9,8 @@
         "webpack": "webpack",
         "css": "gulp",
         "webpack watch": "webpack --watch",
-        "gulp watch": "gulp watch"
+        "gulp watch": "gulp watch",
+        "watch":"tsc & webpack --watch & gulp watch"
     },
     "repository": {
         "type": "git",
