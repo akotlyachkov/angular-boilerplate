@@ -14,3 +14,4 @@ Master2Layout = __decorate([
     })
 ], Master2Layout);
 export { Master2Layout };
+//# sourceMappingURL=master2.js.map

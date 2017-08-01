@@ -35,3 +35,4 @@ InitModule = __decorate([
     })
 ], InitModule);
 export { InitModule };
+//# sourceMappingURL=module.js.map

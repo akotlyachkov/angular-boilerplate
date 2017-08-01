@@ -26,3 +26,4 @@ Page1Page = __decorate([
     })
 ], Page1Page);
 export { Page1Page };
+//# sourceMappingURL=page1.js.map

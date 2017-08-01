@@ -48,3 +48,4 @@ ControlsModule = __decorate([
     })
 ], ControlsModule);
 export { ControlsModule };
+//# sourceMappingURL=module.js.map

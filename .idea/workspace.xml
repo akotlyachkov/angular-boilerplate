@@ -3,7 +3,36 @@
   <component name="ChangeListManager">
     <list default="true" id="1efa7fa9-7255-4d57-b421-d139e0f9dfe6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/controls/control1/control1.js" afterPath="$PROJECT_DIR$/client/app/controls/control1/control1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/controls/control2/control2.js" afterPath="$PROJECT_DIR$/client/app/controls/control2/control2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/controls/control3/control3.js" afterPath="$PROJECT_DIR$/client/app/controls/control3/control3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/controls/control4/control4.js" afterPath="$PROJECT_DIR$/client/app/controls/control4/control4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/controls/entities/menu-item.js" afterPath="$PROJECT_DIR$/client/app/controls/entities/menu-item.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/controls/entities/navbar-item.js" afterPath="$PROJECT_DIR$/client/app/controls/entities/navbar-item.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/controls/footer/footer.js" afterPath="$PROJECT_DIR$/client/app/controls/footer/footer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/controls/jumbotron/jumbotron.js" afterPath="$PROJECT_DIR$/client/app/controls/jumbotron/jumbotron.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/controls/menus/menus.js" afterPath="$PROJECT_DIR$/client/app/controls/menus/menus.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/controls/module.js" afterPath="$PROJECT_DIR$/client/app/controls/module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/controls/navbar/navbar.js" afterPath="$PROJECT_DIR$/client/app/controls/navbar/navbar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/entities/user.js" afterPath="$PROJECT_DIR$/client/app/entities/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/index.js" afterPath="$PROJECT_DIR$/client/app/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/layouts/default/default.js" afterPath="$PROJECT_DIR$/client/app/layouts/default/default.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/layouts/master1/master1.js" afterPath="$PROJECT_DIR$/client/app/layouts/master1/master1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/layouts/master2/master2.js" afterPath="$PROJECT_DIR$/client/app/layouts/master2/master2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/libs.js" afterPath="$PROJECT_DIR$/client/app/libs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/module.js" afterPath="$PROJECT_DIR$/client/app/module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/pages/index/index.js" afterPath="$PROJECT_DIR$/client/app/pages/index/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/pages/module.js" afterPath="$PROJECT_DIR$/client/app/pages/module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/pages/page1/page1.js" afterPath="$PROJECT_DIR$/client/app/pages/page1/page1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/pages/page2/page2.js" afterPath="$PROJECT_DIR$/client/app/pages/page2/page2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/pages/page3/page3.js" afterPath="$PROJECT_DIR$/client/app/pages/page3/page3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/routes.js" afterPath="$PROJECT_DIR$/client/app/routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/services/communicate.js" afterPath="$PROJECT_DIR$/client/app/services/communicate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/services/communicate.ts" afterPath="$PROJECT_DIR$/client/app/services/communicate.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tsconfig.json" afterPath="$PROJECT_DIR$/tsconfig.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,31 +52,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tsconfig.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/index.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+            <state relative-caret-position="340">
+              <caret line="29" column="14" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="29" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -56,76 +65,18 @@
       <file leaf-file-name="module.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/app/controls/module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            <state relative-caret-position="-17">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page1.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/pages/page1/page1.ts">
+      <file leaf-file-name="tsconfig.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tsconfig.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page2.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/pages/page2/page2.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page3.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/pages/page3/page3.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="module.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/app/pages/module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpack.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="53" column="6" lean-forward="true" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="60" column="36" lean-forward="false" selection-start-line="56" selection-start-column="7" selection-end-line="60" selection-end-column="36" />
+            <state relative-caret-position="153">
+              <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -150,6 +101,9 @@
       <find>413</find>
       <find>(335</find>
       <find>bootstrapModule</find>
+      <find>User</find>
+      <find>MenuItem</find>
+      <find>NavbarItem</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -158,7 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/app/layouts/default.ts" />
         <option value="$PROJECT_DIR$/client/app/reducer.ts" />
         <option value="$PROJECT_DIR$/client/app/module.ts" />
         <option value="$PROJECT_DIR$/test/almond.js" />
@@ -175,14 +128,11 @@
         <option value="$PROJECT_DIR$/client/index.js" />
         <option value="$PROJECT_DIR$/start.js" />
         <option value="$PROJECT_DIR$/client/app/index.ts" />
-        <option value="$PROJECT_DIR$/tsconfig.json" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/client/app/controls/menu/menu.html" />
         <option value="$PROJECT_DIR$/client/app/controls/entities/menu.ts" />
         <option value="$PROJECT_DIR$/client/app/controls/jumbo/jumbo.ts" />
         <option value="$PROJECT_DIR$/client/app/controls/jumbotron/jumbotron.ts" />
         <option value="$PROJECT_DIR$/client/app/controls/menu/menu.ts" />
-        <option value="$PROJECT_DIR$/client/app/controls/menus/menus.ts" />
         <option value="$PROJECT_DIR$/client/app/controls/entities/navbar-item.ts" />
         <option value="$PROJECT_DIR$/client/app/controls/footer/footer.ts" />
         <option value="$PROJECT_DIR$/client/app/controls/footer/footer.html" />
@@ -209,6 +159,10 @@
         <option value="$PROJECT_DIR$/client/app/layouts/master2/master2.html" />
         <option value="$PROJECT_DIR$/client/app/pages/index/index.html" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/client/app/controls/menus/menus.ts" />
+        <option value="$PROJECT_DIR$/client/app/services/communicate.ts" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
       </list>
     </option>
   </component>
@@ -253,8 +207,8 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="953" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -276,8 +230,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -308,36 +260,41 @@
               <item name="angular2-webpack2" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="controls" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="angular2-webpack2" type="b2602c69:ProjectViewProjectNode" />
               <item name="angular2-webpack2" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="page1" type="462c0819:PsiDirectoryNode" />
+              <item name="controls" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+              <item name="menu-item.ts" type="620a8d5e:NestingTreeNode" />
             </path>
             <path>
               <item name="angular2-webpack2" type="b2602c69:ProjectViewProjectNode" />
               <item name="angular2-webpack2" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="page2" type="462c0819:PsiDirectoryNode" />
+              <item name="controls" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+              <item name="navbar-item.ts" type="620a8d5e:NestingTreeNode" />
             </path>
             <path>
               <item name="angular2-webpack2" type="b2602c69:ProjectViewProjectNode" />
               <item name="angular2-webpack2" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="page3" type="462c0819:PsiDirectoryNode" />
+              <item name="controls" type="462c0819:PsiDirectoryNode" />
+              <item name="module.ts" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -450,30 +407,21 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <configuration name="css" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="css" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-    </configuration>
-    <configuration name="gulp watch" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="gulp watch" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-    </configuration>
     <configuration name="start.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="start.js" working-dir="$PROJECT_DIR$" />
-    <configuration name="tsc watch" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+    <configuration name="tsc" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="tsc watch" />
+        <script value="tsc" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+    </configuration>
+    <configuration name="watch" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="watch" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -487,20 +435,29 @@
       <node-interpreter value="project" />
       <envs />
     </configuration>
+    <configuration name="webpack" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="webpack" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="npm.tsc watch" />
-      <item index="1" class="java.lang.String" itemvalue="npm.webpack watch" />
-      <item index="2" class="java.lang.String" itemvalue="npm.gulp watch" />
-      <item index="3" class="java.lang.String" itemvalue="npm.css" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.start.js" />
+      <item index="0" class="java.lang.String" itemvalue="npm.webpack watch" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.start.js" />
+      <item index="2" class="java.lang.String" itemvalue="npm.watch" />
+      <item index="3" class="java.lang.String" itemvalue="npm.webpack" />
+      <item index="4" class="java.lang.String" itemvalue="npm.tsc" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="npm.gulp watch" />
-        <item index="1" class="java.lang.String" itemvalue="npm.webpack watch" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.start.js" />
-        <item index="3" class="java.lang.String" itemvalue="npm.css" />
-        <item index="4" class="java.lang.String" itemvalue="npm.tsc watch" />
+        <item index="0" class="java.lang.String" itemvalue="npm.webpack" />
+        <item index="1" class="java.lang.String" itemvalue="npm.tsc" />
+        <item index="2" class="java.lang.String" itemvalue="npm.watch" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.start.js" />
+        <item index="4" class="java.lang.String" itemvalue="npm.webpack watch" />
       </list>
     </recent_temporary>
   </component>
@@ -540,11 +497,14 @@
       <workItem from="1500373980540" duration="1930000" />
       <workItem from="1500377131200" duration="11000" />
       <workItem from="1500556254828" duration="745000" />
+      <workItem from="1500670718240" duration="2001000" />
+      <workItem from="1500930546930" duration="2280000" />
+      <workItem from="1501530605572" duration="1815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79971000" />
+    <option name="totallyTimeSpent" value="86067000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -556,17 +516,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18703899" sideWeight="0.27170417" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3792735" sideWeight="0.6597374" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18703899" sideWeight="0.6366782" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3792735" sideWeight="0.3402626" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37486458" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18703899" sideWeight="0.3633218" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37378114" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261105" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -598,16 +557,10 @@
         <option value="C:/Projects/fastlight/market/client/web/app1/components/module.js" />
         <option value="C:/Projects/fastlight/market/client/web/app1/components/maps/maps.js" />
         <option value="C:/Projects/fastlight/market/client/web/app1/components/menu/menu.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/components/jumbo/jumbotron.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/components/jumbo/entity-jumbo.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/components/jumbo/jumbo.js" />
         <option value="C:/Projects/fastlight/market/client/web/app1/components/pager/pager.js" />
         <option value="C:/Projects/fastlight/market/client/web/app1/components/price/price.js" />
         <option value="C:/Projects/fastlight/market/client/web/app1/components/footer/footer.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/components/navbar/cart.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/components/navbar/navbar-item.js" />
         <option value="C:/Projects/fastlight/market/client/web/app1/components/navbar/navbar.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/components/navbar/brand.js" />
         <option value="C:/Projects/fastlight/market/client/web/app1/components/progress/progress.js" />
         <option value="C:/Projects/fastlight/market/client/web/app1/pages/contacts/contacts.js" />
         <option value="C:/Projects/fastlight/market/client/web/app1/pages/stocks/page-stocks.js" />
@@ -653,7 +606,6 @@
         <option value="C:/Projects/fastlight/market/client/web/app1/pages/view/components/module.js" />
         <option value="C:/Projects/fastlight/market/client/web/app1/pages/view/components/seo.js" />
         <option value="C:/Projects/fastlight/market/client/web/app1/pages/catalog/components/module.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/catalog/components/seo/seo.js" />
         <option value="C:/Projects/fastlight/market/client/web/app1/pages/catalog/components/alert/alert.js" />
         <option value="C:/Projects/fastlight/market/client/web/app1/pages/catalog/components/filter/filter.js" />
         <option value="C:/Projects/fastlight/market/client/web/app1/pages/catalog/components/product/product.js" />
@@ -665,6 +617,31 @@
         <option value="C:/Projects/fastlight/market/client/web/app1/pages/catalog/components/filter/checkbox/checkbox.js" />
         <option value="C:/Projects/fastlight/market/client/web/app1/pages/catalog/components/filter/radiolist/radiolist.js" />
         <option value="C:/Projects/fastlight/market/client/web/app1/pages/catalog/components/filter/checkboxlist/checkboxlist.js" />
+        <option value="$PROJECT_DIR$/client/app/module.js.map" />
+        <option value="$PROJECT_DIR$/client/app/index.js.map" />
+        <option value="$PROJECT_DIR$/client/app/libs.js.map" />
+        <option value="$PROJECT_DIR$/client/app/routes.js.map" />
+        <option value="$PROJECT_DIR$/client/app/pages/module.js.map" />
+        <option value="$PROJECT_DIR$/client/app/controls/module.js.map" />
+        <option value="$PROJECT_DIR$/client/app/entities/user.js.map" />
+        <option value="$PROJECT_DIR$/client/app/services/communicate.js.map" />
+        <option value="$PROJECT_DIR$/client/app/pages/index/index.js.map" />
+        <option value="$PROJECT_DIR$/client/app/pages/page1/page1.js.map" />
+        <option value="$PROJECT_DIR$/client/app/pages/page2/page2.js.map" />
+        <option value="$PROJECT_DIR$/client/app/pages/page3/page3.js.map" />
+        <option value="$PROJECT_DIR$/client/app/layouts/default/default.js.map" />
+        <option value="$PROJECT_DIR$/client/app/layouts/master1/master1.js.map" />
+        <option value="$PROJECT_DIR$/client/app/layouts/master2/master2.js.map" />
+        <option value="$PROJECT_DIR$/client/app/controls/menus/menus.js.map" />
+        <option value="$PROJECT_DIR$/client/app/controls/footer/footer.js.map" />
+        <option value="$PROJECT_DIR$/client/app/controls/navbar/navbar.js.map" />
+        <option value="$PROJECT_DIR$/client/app/controls/control1/control1.js.map" />
+        <option value="$PROJECT_DIR$/client/app/controls/control2/control2.js.map" />
+        <option value="$PROJECT_DIR$/client/app/controls/control3/control3.js.map" />
+        <option value="$PROJECT_DIR$/client/app/controls/control4/control4.js.map" />
+        <option value="$PROJECT_DIR$/client/app/controls/entities/navbar-item.js.map" />
+        <option value="$PROJECT_DIR$/client/app/controls/entities/menu-item.js.map" />
+        <option value="$PROJECT_DIR$/client/app/controls/jumbotron/jumbotron.js.map" />
       </list>
     </option>
   </component>
@@ -681,49 +658,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/app/controls/control1/control1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/controls/control1/control1.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rollup.config.js" />
-    <entry file="file://$PROJECT_DIR$/client/app/module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/start.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="62" lean-forward="false" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/bundle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="79428" column="14" lean-forward="false" selection-start-line="79428" selection-start-column="14" selection-end-line="79428" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
@@ -738,31 +672,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/controls/entities/menu-item.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/controls/entities/navbar-item.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/app/controls/jumbotron/jumbotron.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="31" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/controls/menus/menus.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -911,7 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -919,7 +831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -927,7 +838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -935,7 +845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -943,7 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -951,7 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -959,30 +866,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="37" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
-          <caret line="60" column="36" lean-forward="false" selection-start-line="56" selection-start-column="7" selection-end-line="60" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+          <caret line="60" column="30" lean-forward="false" selection-start-line="56" selection-start-column="7" selection-end-line="60" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -991,23 +881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="53" column="6" lean-forward="true" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/controls/module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1015,9 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1025,9 +895,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1035,9 +902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1045,9 +909,107 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/webpack/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/controls/entities/menu-item.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/controls/entities/navbar-item.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/controls/menus/menus.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/controls/control1/control1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/controls/module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="47" lean-forward="true" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/controls/control1/control1.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/entities/user.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/services/communicate.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/controls/module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="29" column="14" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="29" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>

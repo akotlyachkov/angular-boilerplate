@@ -25,6 +25,11 @@ module.exports = {
             },*/
             {
                 test: /\.js$/,
+                use: ["source-map-loader"],
+                enforce: "pre"
+            },
+            {
+                test: /\.js$/,
                 loaders: ['angular2-template-loader'],
                 include: path.join(__dirname,'client/app'),
             },
@@ -67,7 +72,12 @@ module.exports = {
         })
     ],
     resolve: {
-        extensions: ['.js','.html' ]
+        extensions: ['.js','.html' ],
+        modules: [
+            path.resolve(__dirname, 'node_modules'),
+            path.resolve(__dirname, 'client/app')
+        ]
+
     },
     devtool: 'source-map',
 };

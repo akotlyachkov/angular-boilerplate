@@ -22,3 +22,4 @@ CommunicateService = __decorate([
     Injectable()
 ], CommunicateService);
 export { CommunicateService };
+//# sourceMappingURL=communicate.js.map

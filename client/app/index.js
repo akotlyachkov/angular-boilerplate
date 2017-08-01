@@ -3,3 +3,4 @@ import { InitModule } from "./module";
 import { enableProdMode } from "@angular/core";
 enableProdMode();
 platformBrowserDynamic().bootstrapModule(InitModule);
+//# sourceMappingURL=index.js.map

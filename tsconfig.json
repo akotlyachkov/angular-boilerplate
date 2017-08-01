@@ -7,6 +7,7 @@
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "removeComments": true,
+        "sourceMap": true,
         "noImplicitAny": false,
         "lib": [
             "es2015",
@@ -14,7 +15,8 @@
         ],
         "typeRoots": [
             "./node_modules/@types"
-        ]
+        ],
+        "baseUrl": "./client/app"
     },
     "include": [
         "client/app/index.ts",

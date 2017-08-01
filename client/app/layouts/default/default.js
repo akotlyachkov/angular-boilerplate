@@ -21,3 +21,4 @@ DefaultLayout = __decorate([
     })
 ], DefaultLayout);
 export { DefaultLayout };
+//# sourceMappingURL=default.js.map
