@@ -3,36 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1efa7fa9-7255-4d57-b421-d139e0f9dfe6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/controls/control1/control1.js" afterPath="$PROJECT_DIR$/client/app/controls/control1/control1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/controls/control2/control2.js" afterPath="$PROJECT_DIR$/client/app/controls/control2/control2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/controls/control3/control3.js" afterPath="$PROJECT_DIR$/client/app/controls/control3/control3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/controls/control4/control4.js" afterPath="$PROJECT_DIR$/client/app/controls/control4/control4.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/controls/entities/menu-item.js" afterPath="$PROJECT_DIR$/client/app/controls/entities/menu-item.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/controls/entities/navbar-item.js" afterPath="$PROJECT_DIR$/client/app/controls/entities/navbar-item.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/controls/footer/footer.js" afterPath="$PROJECT_DIR$/client/app/controls/footer/footer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/controls/jumbotron/jumbotron.js" afterPath="$PROJECT_DIR$/client/app/controls/jumbotron/jumbotron.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/controls/menus/menus.js" afterPath="$PROJECT_DIR$/client/app/controls/menus/menus.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/controls/module.js" afterPath="$PROJECT_DIR$/client/app/controls/module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/controls/navbar/navbar.js" afterPath="$PROJECT_DIR$/client/app/controls/navbar/navbar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/entities/user.js" afterPath="$PROJECT_DIR$/client/app/entities/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/index.js" afterPath="$PROJECT_DIR$/client/app/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/layouts/default/default.js" afterPath="$PROJECT_DIR$/client/app/layouts/default/default.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/layouts/master1/master1.js" afterPath="$PROJECT_DIR$/client/app/layouts/master1/master1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/layouts/master2/master2.js" afterPath="$PROJECT_DIR$/client/app/layouts/master2/master2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/libs.js" afterPath="$PROJECT_DIR$/client/app/libs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/module.js" afterPath="$PROJECT_DIR$/client/app/module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/pages/index/index.js" afterPath="$PROJECT_DIR$/client/app/pages/index/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/pages/module.js" afterPath="$PROJECT_DIR$/client/app/pages/module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/pages/page1/page1.js" afterPath="$PROJECT_DIR$/client/app/pages/page1/page1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/pages/page2/page2.js" afterPath="$PROJECT_DIR$/client/app/pages/page2/page2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/pages/page3/page3.js" afterPath="$PROJECT_DIR$/client/app/pages/page3/page3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/routes.js" afterPath="$PROJECT_DIR$/client/app/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/services/communicate.js" afterPath="$PROJECT_DIR$/client/app/services/communicate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/services/communicate.ts" afterPath="$PROJECT_DIR$/client/app/services/communicate.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tsconfig.json" afterPath="$PROJECT_DIR$/tsconfig.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/index.js" afterPath="$PROJECT_DIR$/server/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -52,21 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="29" column="14" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="29" selection-end-column="14" />
+            <state relative-caret-position="51">
+              <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/controls/module.ts">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="56" />
+            <state relative-caret-position="616">
+              <caret line="63" column="16" lean-forward="false" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -112,7 +83,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/app/reducer.ts" />
         <option value="$PROJECT_DIR$/client/app/module.ts" />
         <option value="$PROJECT_DIR$/test/almond.js" />
         <option value="$PROJECT_DIR$/test/index.html" />
@@ -163,6 +133,7 @@
         <option value="$PROJECT_DIR$/client/app/services/communicate.ts" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/server/index.js" />
       </list>
     </option>
   </component>
@@ -208,9 +179,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="-1924" />
+    <option name="y" value="-4" />
+    <option name="width" value="1928" />
+    <option name="height" value="1088" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -230,6 +202,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,66 +215,18 @@
               <item name="angular2-webpack2" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="angular2-webpack2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular2-webpack2" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular2-webpack2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular2-webpack2" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controls" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular2-webpack2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular2-webpack2" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controls" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular2-webpack2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular2-webpack2" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controls" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-              <item name="menu-item.ts" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="angular2-webpack2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular2-webpack2" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controls" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-              <item name="navbar-item.ts" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="angular2-webpack2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular2-webpack2" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controls" type="462c0819:PsiDirectoryNode" />
-              <item name="module.ts" type="620a8d5e:NestingTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../angular2-rollup" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../universal-starter" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -407,21 +332,21 @@
       <recursive>false</recursive>
       <method />
     </configuration>
+    <configuration name="css" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="css" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+    </configuration>
     <configuration name="start.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="start.js" working-dir="$PROJECT_DIR$" />
     <configuration name="tsc" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="tsc" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-    </configuration>
-    <configuration name="watch" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="watch" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -447,17 +372,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="npm.webpack watch" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.start.js" />
-      <item index="2" class="java.lang.String" itemvalue="npm.watch" />
-      <item index="3" class="java.lang.String" itemvalue="npm.webpack" />
-      <item index="4" class="java.lang.String" itemvalue="npm.tsc" />
+      <item index="2" class="java.lang.String" itemvalue="npm.webpack" />
+      <item index="3" class="java.lang.String" itemvalue="npm.tsc" />
+      <item index="4" class="java.lang.String" itemvalue="npm.css" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="npm.webpack" />
-        <item index="1" class="java.lang.String" itemvalue="npm.tsc" />
-        <item index="2" class="java.lang.String" itemvalue="npm.watch" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.start.js" />
-        <item index="4" class="java.lang.String" itemvalue="npm.webpack watch" />
+        <item index="0" class="java.lang.String" itemvalue="npm.css" />
+        <item index="1" class="java.lang.String" itemvalue="npm.webpack watch" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.start.js" />
+        <item index="3" class="java.lang.String" itemvalue="npm.webpack" />
+        <item index="4" class="java.lang.String" itemvalue="npm.tsc" />
       </list>
     </recent_temporary>
   </component>
@@ -500,11 +425,14 @@
       <workItem from="1500670718240" duration="2001000" />
       <workItem from="1500930546930" duration="2280000" />
       <workItem from="1501530605572" duration="1815000" />
+      <workItem from="1501665406955" duration="1813000" />
+      <workItem from="1501749611393" duration="1228000" />
+      <workItem from="1501849196493" duration="1847000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86067000" />
+    <option name="totallyTimeSpent" value="90955000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -516,27 +444,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1924" y="-4" width="1928" height="1088" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18703899" sideWeight="0.27170417" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18703899" sideWeight="0.6366782" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37358102" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18703899" sideWeight="0.3633218" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37378114" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18325435" sideWeight="0.38220757" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32610938" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18703899" sideWeight="0.27170417" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18325435" sideWeight="0.6177924" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261105" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -544,79 +473,6 @@
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/layout/layout.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/delivery/delivery.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/specials/page-specials.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/specials/components/promo.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/specials/components/product.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/specials/components/products.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/specials/components/welcome.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/specials/components/module.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/specials/components/seo.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/notfound/page-notfound.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/components/module.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/components/maps/maps.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/components/menu/menu.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/components/pager/pager.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/components/price/price.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/components/footer/footer.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/components/navbar/navbar.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/components/progress/progress.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/contacts/contacts.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/stocks/page-stocks.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/cart/components/mode.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/cart/components/module.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/cart/components/contact/contact.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/cart/components/history/history.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/cart/components/positions/positions.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/services/navbar.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/services/global.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/services/config.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/services/parameters.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/cart/history/history.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/cart/cart/cart.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/index.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/libs.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/module.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/module.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/entities/color.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/entities/delivery.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/entities/settings.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/entities/category.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/entities/parameter.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/entities/position.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/entities/config.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/entities/contract.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/entities/product.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/entities/cart.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/providers/settings.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/providers/category.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/providers/contract.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/providers/parameter.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/providers/product.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/view/view.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/catalog/catalog.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/view/components/similar.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/view/components/specification.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/view/components/information.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/view/components/photo.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/view/components/title.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/view/components/gallery.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/view/components/socials.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/view/components/module.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/view/components/seo.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/catalog/components/module.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/catalog/components/alert/alert.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/catalog/components/filter/filter.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/catalog/components/product/product.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/catalog/components/sorting/sorting.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/catalog/components/sorting/mode.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/catalog/components/sorting/sort.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/catalog/components/filter/inputs/inputs.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/catalog/components/filter/buttons/buttons.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/catalog/components/filter/checkbox/checkbox.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/catalog/components/filter/radiolist/radiolist.js" />
-        <option value="C:/Projects/fastlight/market/client/web/app1/pages/catalog/components/filter/checkboxlist/checkboxlist.js" />
         <option value="$PROJECT_DIR$/client/app/module.js.map" />
         <option value="$PROJECT_DIR$/client/app/index.js.map" />
         <option value="$PROJECT_DIR$/client/app/libs.js.map" />
@@ -658,27 +514,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/build/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-77654">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/controls/jumbotron/jumbotron.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="31" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/app/controls/footer/footer.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -820,13 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/app/layouts/default/default.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -869,14 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="30" lean-forward="false" selection-start-line="56" selection-start-column="7" selection-end-line="60" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/app/module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -906,13 +726,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/app/pages/module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -989,6 +802,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/controls/module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -997,18 +845,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/controls/module.ts">
+    <entry file="file://$PROJECT_DIR$/client/config.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="56" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="14" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="29" selection-end-column="14" />
+        <state relative-caret-position="616">
+          <caret line="63" column="16" lean-forward="false" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="18" />
           <folding />
         </state>
       </provider>

@@ -1,9 +1,10 @@
 const express = require('express'),
     app = express(),
     config = require('./config');
+    configClient = require('../client/config');
 
 app.get('/config', function (req, res, next) {
-    res.send({config: true});
+    res.send(configClient);
 });
 
 app.post('/test', function (req, res, next) {
