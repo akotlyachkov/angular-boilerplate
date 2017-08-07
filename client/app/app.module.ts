@@ -7,6 +7,8 @@ import {CommunicateService} from "./services/communicate";
 import {Master1Layout} from "./layouts/master1/master1";
 import {Master2Layout} from "./layouts/master2/master2";
 import {ControlsModule} from "./controls/module";
+import {CommonModule} from "@angular/common";
+import {HttpModule} from "@angular/http";
 
 @NgModule({
     declarations: [
@@ -15,16 +17,17 @@ import {ControlsModule} from "./controls/module";
         Master2Layout
     ],
     imports: [
-        BrowserModule,
+        CommonModule,
+        HttpModule,
         ControlsModule,
         PagesModule,
         RoutingModule
     ],
     providers: [CommunicateService],
-    bootstrap: [
+    exports: [
         DefaultLayout
     ]
 })
-export class InitModule {
+export class AppModule {
 
 }

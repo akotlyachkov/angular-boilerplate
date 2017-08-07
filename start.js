@@ -10,6 +10,9 @@ const express = require('express'),
     serverApp = require('./server'),
     clientApp = require('./client');
 
+global.Reflect = require('reflect-metadata');
+//Reflect.getOwnMetadata
+
 app.use(helmet());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));

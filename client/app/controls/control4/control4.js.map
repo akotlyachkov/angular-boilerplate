@@ -1,1 +1,1 @@
-{"version":3,"file":"control4.js","sourceRoot":"","sources":["control4.ts"],"names":[],"mappings":";;;;;;AAAA,OAAO,EAAC,SAAS,EAAC,MAAM,eAAe,CAAC;AAMxC,IAAa,eAAe,GAA5B;CAGC,CAAA;AAHY,eAAe;IAJ3B,SAAS,CAAC;QACP,QAAQ,EAAE,UAAU;QACpB,WAAW,EAAE,eAAe;KAC/B,CAAC;GACW,eAAe,CAG3B;SAHY,eAAe"}
+{"version":3,"file":"control4.js","sourceRoot":"","sources":["control4.ts"],"names":[],"mappings":";;;;;;;;AAAA,wCAAwC;AAMxC,IAAa,eAAe,GAA5B;CAGC,CAAA;AAHY,eAAe;IAJ3B,gBAAS,CAAC;QACP,QAAQ,EAAE,UAAU;QACpB,WAAW,EAAE,eAAe;KAC/B,CAAC;GACW,eAAe,CAG3B;AAHY,0CAAe"}

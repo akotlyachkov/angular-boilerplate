@@ -1,3 +1,4 @@
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7,8 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { Component, ViewChild } from "@angular/core";
-import { Control1Control } from "../../controls/control1/control1";
+Object.defineProperty(exports, "__esModule", { value: true });
+const core_1 = require("@angular/core");
+const control1_1 = require("../../controls/control1/control1");
 let Page1Page = class Page1Page {
     clickHandler() {
         console.log('нажали 1');
@@ -16,14 +18,14 @@ let Page1Page = class Page1Page {
     }
 };
 __decorate([
-    ViewChild(Control1Control),
-    __metadata("design:type", Control1Control)
+    core_1.ViewChild(control1_1.Control1Control),
+    __metadata("design:type", control1_1.Control1Control)
 ], Page1Page.prototype, "control1", void 0);
 Page1Page = __decorate([
-    Component({
+    core_1.Component({
         selector: 'page1',
         templateUrl: 'page1.html'
     })
 ], Page1Page);
-export { Page1Page };
+exports.Page1Page = Page1Page;
 //# sourceMappingURL=page1.js.map

@@ -1,12 +1,15 @@
-// import 'zone.js'
-// import 'reflect-metadata'
-// import 'rxjs';
+import 'zone.js'
+import 'reflect-metadata'
+import 'rxjs';
 
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
-import {InitModule} from "./module";
+import {BrowserAppModule} from "./browser.module";
 import {enableProdMode} from "@angular/core";
 
 enableProdMode();
 
-platformBrowserDynamic().bootstrapModule(InitModule);
+export function main() {
+    platformBrowserDynamic().bootstrapModule(BrowserAppModule);
+}
 
+document.addEventListener('DOMContentLoaded', main, false);
