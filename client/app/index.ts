@@ -1,6 +1,6 @@
-import 'zone.js'
+/*import 'zone.js'
 import 'reflect-metadata'
-import 'rxjs';
+import 'rxjs';*/
 
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAppModule} from "./browser.module";

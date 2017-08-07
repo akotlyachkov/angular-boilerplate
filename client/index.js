@@ -4,12 +4,12 @@ const express = require('express'),
     path = require('path'),
     fs = require('fs'),
     config = require('./config.json'),
-    serverModule = require('./app/server.module.js').ServerAppModule;
+    serverModule = require('./build/server').ServerAppModule;
 
 
 
 app.engine('html', engine.ngExpressEngine({
-    bootstrap: serverModule
+    bootstrap: [serverModule]
 }));
 app.set('view engine', 'html');
 app.set('views', path.join(__dirname, 'views'));
