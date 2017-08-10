@@ -6,7 +6,7 @@ import {User} from "../../entities/user";
 
 @Component({
     selector: 'page3',
-    templateUrl: 'page3.html'
+    templateUrl: './page3.html'
 })
 export class Page3Page {
 

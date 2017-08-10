@@ -1,4 +1,3 @@
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,14 +7,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-const core_1 = require("@angular/core");
-const communicate_1 = require("../../services/communicate");
-const user_1 = require("../../entities/user");
-let Page2Page = class Page2Page {
-    constructor(srv) {
+import { Component } from "@angular/core";
+import { CommunicateService } from "../../services/communicate";
+import { User } from "../../entities/user";
+var Page2Page = (function () {
+    function Page2Page(srv) {
+        var _this = this;
         this.srv = srv;
-        this.model = new user_1.User;
+        this.model = new User;
         this.observer = {
             next: function (obj) {
                 obj.name += ' 1';
@@ -24,22 +23,22 @@ let Page2Page = class Page2Page {
             }
         };
         this.model.name = "d";
-        this.srv.filterObservable.subscribe(obj => {
+        this.srv.filterObservable.subscribe(function (obj) {
             obj.name += ' 1';
             console.dir(obj);
-            this.model = obj;
+            _this.model = obj;
         });
     }
-    testik($event) {
-        console.log(`from page2 "${$event}"`);
-    }
-};
-Page2Page = __decorate([
-    core_1.Component({
-        selector: 'page2',
-        templateUrl: 'page2.html'
-    }),
-    __metadata("design:paramtypes", [communicate_1.CommunicateService])
-], Page2Page);
-exports.Page2Page = Page2Page;
-//# sourceMappingURL=page2.js.map
+    Page2Page.prototype.testik = function ($event) {
+        console.log("from page2 \"" + $event + "\"");
+    };
+    Page2Page = __decorate([
+        Component({
+            selector: 'page2',
+            templateUrl: './page2.html'
+        }),
+        __metadata("design:paramtypes", [CommunicateService])
+    ], Page2Page);
+    return Page2Page;
+}());
+export { Page2Page };

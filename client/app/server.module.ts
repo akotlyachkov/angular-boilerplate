@@ -1,7 +1,8 @@
-import 'zone.js/dist/zone-node';
+/*import 'zone.js/dist/zone-node';
 import 'reflect-metadata';
 import 'rxjs/Rx';
-
+import { platformServer, renderModuleFactory } from '@angular/platform-server';
+*/
 import {NgModule} from '@angular/core';
 import {ServerModule} from '@angular/platform-server';
 import {AppModule} from './app.module';

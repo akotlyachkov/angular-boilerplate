@@ -1,4 +1,3 @@
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,34 +7,33 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-const core_1 = require("@angular/core");
-const user_1 = require("../../entities/user");
-const communicate_1 = require("../../services/communicate");
-let Control2Control = class Control2Control {
-    constructor(communicateService) {
+import { Component, EventEmitter, Output } from "@angular/core";
+import { User } from "../../entities/user";
+import { CommunicateService } from "../../services/communicate";
+var Control2Control = (function () {
+    function Control2Control(communicateService) {
         this.communicateService = communicateService;
-        this.model = new user_1.User;
-        this.onClick = new core_1.EventEmitter();
+        this.model = new User;
+        this.onClick = new EventEmitter();
     }
-    clickHandler() {
+    Control2Control.prototype.clickHandler = function () {
         this.onClick.emit("privet");
         console.log(this.communicateService.test());
-    }
-    clickReactiveHandler() {
+    };
+    Control2Control.prototype.clickReactiveHandler = function () {
         this.communicateService.provideFilter(this.model);
-    }
-};
-__decorate([
-    core_1.Output(),
-    __metadata("design:type", Object)
-], Control2Control.prototype, "onClick", void 0);
-Control2Control = __decorate([
-    core_1.Component({
-        selector: 'control2',
-        templateUrl: 'control2.html'
-    }),
-    __metadata("design:paramtypes", [communicate_1.CommunicateService])
-], Control2Control);
-exports.Control2Control = Control2Control;
-//# sourceMappingURL=control2.js.map
+    };
+    __decorate([
+        Output(),
+        __metadata("design:type", Object)
+    ], Control2Control.prototype, "onClick", void 0);
+    Control2Control = __decorate([
+        Component({
+            selector: 'control2',
+            templateUrl: './control2.html'
+        }),
+        __metadata("design:paramtypes", [CommunicateService])
+    ], Control2Control);
+    return Control2Control;
+}());
+export { Control2Control };

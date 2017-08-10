@@ -3,7 +3,7 @@ import {NavbarItem} from "../entities/navbar-item";
 
 @Component({
     selector: 'navbar',
-    templateUrl: 'navbar.html'
+    templateUrl: './navbar.html'
 })
 export class NavbarComponent {
     @Input()

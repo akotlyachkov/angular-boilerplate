@@ -8,10 +8,8 @@ const express = require('express'),
     server = http.createServer(app),
     config = require('./config'),
     serverApp = require('./server'),
-    clientApp = require('./client');
-
-global.Reflect = require('reflect-metadata');
-//Reflect.getOwnMetadata
+    //clientApp = require('./client');
+    clientApp = require('./client/server').app;
 
 app.use(helmet());
 app.use(bodyParser.json());

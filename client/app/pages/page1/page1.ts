@@ -4,7 +4,7 @@ import {Control1Control} from "../../controls/control1/control1";
 
 @Component({
     selector: 'page1',
-    templateUrl: 'page1.html'
+    templateUrl: './page1.html'
 })
 export class Page1Page {
 

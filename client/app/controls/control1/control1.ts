@@ -4,7 +4,7 @@ import {CommunicateService} from "../../services/communicate";
 @Component({
     selector: 'control1',
 
-    templateUrl: 'control1.html'
+    templateUrl: './control1.html'
 })
 export class Control1Control {
 

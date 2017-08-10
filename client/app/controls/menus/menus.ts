@@ -3,7 +3,7 @@ import {MenuItem} from "../entities/menu-item";
 
 @Component({
     selector: 'menus',
-    templateUrl: 'menus.html'
+    templateUrl: './menus.html'
 })
 export class MenusComponent {
 
