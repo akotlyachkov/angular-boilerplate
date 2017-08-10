@@ -1,12 +1,10 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-require("zone.js");
-require("reflect-metadata");
-require("rxjs");
-require("@angular/platform-browser");
-require("@angular/platform-browser-dynamic");
-require("@angular/core");
-require("@angular/common");
-require("@angular/http");
-require("@angular/router");
+import 'zone.js';
+import 'reflect-metadata';
+import 'rxjs';
+import '@angular/platform-browser';
+import '@angular/platform-browser-dynamic';
+import '@angular/core';
+import '@angular/common';
+import '@angular/http';
+import '@angular/router';
 //# sourceMappingURL=libs.js.map

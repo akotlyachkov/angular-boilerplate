@@ -1,28 +1,17 @@
 const webpack = require('webpack'),
     path = require('path');
 
-module.exports = {
+module.exports ={
     entry: {
         app: './client/app/index.js',
         libs: './client/app/libs.js'
     },
-
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, './client/build')
     },
     module: {
         rules: [
-            /*{
-                test: /\.ts$/,
-                loaders: [{
-                    loader: 'awesome-typescript-loader',
-                    options: {
-                        transpileOnly: true
-                    }
-                }, 'angular2-template-loader'],
-                exclude: /node_modules/,
-            },*/
             {
                 test: /\.js$/,
                 use: ["source-map-loader"],
@@ -31,23 +20,8 @@ module.exports = {
             {
                 test: /\.js$/,
                 loaders: ['angular2-template-loader'],
-                include: path.join(__dirname,'client/app'),
+                include: path.join(__dirname, 'client/app'),
             },
-            /*{
-                test: /\.scss$/,
-                include: path.join(__dirname,'client/app'),
-                loaders: ['raw-loader', 'sass-loader'],
-            },
-            {
-                test: /\.scss$/,
-                include: path.join(__dirname,'client/styles'),
-                loaders: ['style-loader', 'css-loader','sass-loader'],
-            },
-            {
-                test: /\.woff$/,
-                loader: 'base64-font-loader',
-
-            },*/
             {
                 test: /\.html$/,
                 loader: 'html-loader',
@@ -60,10 +34,10 @@ module.exports = {
     plugins: [
         new webpack.ContextReplacementPlugin(
             /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
-           path.join(__dirname,'client/app')
+            path.join(__dirname, 'client/app')
         ),
         new webpack.optimize.CommonsChunkPlugin({
-            name:'common',
+            name: 'common',
             minChunks: 2,
             chunks: [
                 'app',
@@ -72,7 +46,7 @@ module.exports = {
         })
     ],
     resolve: {
-        extensions: ['.js','.html' ],
+        extensions: ['.js', '.html'],
         modules: [
             path.resolve(__dirname, 'node_modules'),
             path.resolve(__dirname, 'client/app')

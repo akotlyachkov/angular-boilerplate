@@ -1,6 +1,5 @@
 import {NgModule} from "@angular/core";
 import {DefaultLayout} from "./layouts/default/default";
-import {BrowserModule} from "@angular/platform-browser";
 import {PagesModule} from "./pages/module";
 import {RoutingModule} from "./routes";
 import {CommunicateService} from "./services/communicate";

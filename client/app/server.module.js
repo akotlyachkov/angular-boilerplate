@@ -6,29 +6,27 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-require("zone.js");
+require("zone.js/dist/zone-node");
 require("reflect-metadata");
-require("rxjs");
-var core_1 = require("@angular/core");
-var platform_server_1 = require("@angular/platform-server");
-var app_module_1 = require("./app.module");
-var platform_browser_1 = require("@angular/platform-browser");
-var default_1 = require("./layouts/default/default");
-var ServerAppModule = (function () {
-    function ServerAppModule() {
-    }
-    ServerAppModule = __decorate([
-        core_1.NgModule({
-            bootstrap: [default_1.DefaultLayout],
-            imports: [
-                platform_browser_1.BrowserModule.withServerTransition({
-                    appId: 'my-app-id'
-                }),
-                platform_server_1.ServerModule,
-                app_module_1.AppModule
-            ],
-        })
-    ], ServerAppModule);
-    return ServerAppModule;
-}());
+require("rxjs/Rx");
+const core_1 = require("@angular/core");
+const platform_server_1 = require("@angular/platform-server");
+const app_module_1 = require("./app.module");
+const platform_browser_1 = require("@angular/platform-browser");
+const default_1 = require("./layouts/default/default");
+let ServerAppModule = class ServerAppModule {
+};
+ServerAppModule = __decorate([
+    core_1.NgModule({
+        bootstrap: [default_1.DefaultLayout],
+        imports: [
+            platform_browser_1.BrowserModule.withServerTransition({
+                appId: 'my-app-id'
+            }),
+            platform_server_1.ServerModule,
+            app_module_1.AppModule
+        ],
+    })
+], ServerAppModule);
 exports.ServerAppModule = ServerAppModule;
+//# sourceMappingURL=server.module.js.map

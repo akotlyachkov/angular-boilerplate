@@ -1,14 +1,14 @@
 const express = require('express'),
-    engine = require('@nguniversal/express-engine'),
+    ngExpressEngine = require('@nguniversal/express-engine').ngExpressEngine,
     app = express(),
     path = require('path'),
     fs = require('fs'),
     config = require('./config.json'),
-    serverModule = require('./app/server.module.js').ServerAppModule;
+    serverModule = require('./build/server').ServerAppModule;
 
 
 
-app.engine('html', engine.ngExpressEngine({
+app.engine('html', ngExpressEngine({
     bootstrap: serverModule
 }));
 app.set('view engine', 'html');
