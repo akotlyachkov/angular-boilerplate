@@ -1,5 +1,5 @@
 const express = require('express'),
-    engine = require('@nguniversal/express-engine'),
+    ngExpressEngine = require('@nguniversal/express-engine').ngExpressEngine,
     app = express(),
     path = require('path'),
     fs = require('fs'),
@@ -8,8 +8,8 @@ const express = require('express'),
 
 
 
-app.engine('html', engine.ngExpressEngine({
-    bootstrap: [serverModule]
+app.engine('html', ngExpressEngine({
+    bootstrap: serverModule
 }));
 app.set('view engine', 'html');
 app.set('views', path.join(__dirname, 'views'));

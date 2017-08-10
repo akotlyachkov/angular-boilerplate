@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
-        "target": "es6",
-        "module": "commonjs",
+        "target": "es5",
+        "module": "es2015",
         "moduleResolution": "node",
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
@@ -19,5 +19,8 @@
     },
     "include": [
         "client/app/server.module.ts"
-    ]
+    ],
+    "angularCompilerOptions": {
+    "entryModule": "./app/server-app.module#ServerAppModule"
+}
 }
