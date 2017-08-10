@@ -1,3 +1,6 @@
-export class MenuItem {
-}
-//# sourceMappingURL=menu-item.js.map
+var MenuItem = (function () {
+    function MenuItem() {
+    }
+    return MenuItem;
+}());
+export { MenuItem };

@@ -9,26 +9,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 import { Component, Input } from "@angular/core";
 import { CommunicateService } from "../../services/communicate";
-let Control1Control = class Control1Control {
-    constructor(communicateService) {
+var Control1Control = (function () {
+    function Control1Control(communicateService) {
         this.communicateService = communicateService;
     }
-    logger() {
+    Control1Control.prototype.logger = function () {
         console.log("контрол 1 написал");
-    }
-};
-__decorate([
-    Input(),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
-    __metadata("design:returntype", void 0)
-], Control1Control.prototype, "logger", null);
-Control1Control = __decorate([
-    Component({
-        selector: 'control1',
-        templateUrl: './control1.html'
-    }),
-    __metadata("design:paramtypes", [CommunicateService])
-], Control1Control);
+    };
+    __decorate([
+        Input(),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", []),
+        __metadata("design:returntype", void 0)
+    ], Control1Control.prototype, "logger", null);
+    Control1Control = __decorate([
+        Component({
+            selector: 'control1',
+            templateUrl: './control1.html'
+        }),
+        __metadata("design:paramtypes", [CommunicateService])
+    ], Control1Control);
+    return Control1Control;
+}());
 export { Control1Control };
-//# sourceMappingURL=control1.js.map

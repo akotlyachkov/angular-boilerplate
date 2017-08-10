@@ -1,5 +1,5 @@
 import * as i0 from '@angular/core';
-import * as i1 from './server.module';
+import * as i1 from './module';
 import * as i2 from '../layouts/default/default';
 import * as i3 from '../layouts/master1/master1.ngfactory';
 import * as i4 from '../pages/index/index.ngfactory';
@@ -30,7 +30,7 @@ import * as i28 from '../controls/control4/control4';
 import * as i29 from '../controls/module';
 import * as i30 from '../pages/module';
 import * as i31 from '../routes';
-import * as i32 from './app.module';
+import * as i32 from '../module';
 export var ServerAppModuleNgFactory = i0.ɵcmf(i1.ServerAppModule, [i2.DefaultLayout], function (_l) {
     return i0.ɵmod([i0.ɵmpd(512, i0.ComponentFactoryResolver, i0.ɵCodegenComponentFactoryResolver, [[8, [i3.Master1LayoutNgFactory, i4.IndexPageNgFactory, i5.Page1PageNgFactory,
                     i6.Master2LayoutNgFactory, i7.Page2PageNgFactory, i8.Control3ControlNgFactory,

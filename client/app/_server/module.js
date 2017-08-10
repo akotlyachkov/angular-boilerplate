@@ -9,18 +9,21 @@ import { NgModule } from '@angular/core';
 import { AppModule } from '../module';
 import { BrowserModule } from '@angular/platform-browser';
 import { DefaultLayout } from "../layouts/default/default";
-let ServerAppModule = class ServerAppModule {
-};
-ServerAppModule = __decorate([
-    NgModule({
-        bootstrap: [DefaultLayout],
-        imports: [
-            BrowserModule.withServerTransition({
-                appId: 'my-app-id'
-            }),
-            ServerModule,
-            AppModule
-        ],
-    })
-], ServerAppModule);
+var ServerAppModule = (function () {
+    function ServerAppModule() {
+    }
+    ServerAppModule = __decorate([
+        NgModule({
+            bootstrap: [DefaultLayout],
+            imports: [
+                BrowserModule.withServerTransition({
+                    appId: 'my-app-id'
+                }),
+                ServerModule,
+                AppModule
+            ],
+        })
+    ], ServerAppModule);
+    return ServerAppModule;
+}());
 export { ServerAppModule };

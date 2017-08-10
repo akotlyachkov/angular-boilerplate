@@ -14,29 +14,31 @@ import { Master2Layout } from "./layouts/master2/master2";
 import { ControlsModule } from "./controls/module";
 import { CommonModule } from "@angular/common";
 import { HttpModule } from "@angular/http";
-let AppModule = class AppModule {
-};
-AppModule = __decorate([
-    NgModule({
-        declarations: [
-            DefaultLayout,
-            Master1Layout,
-            Master2Layout
-        ],
-        imports: [
-            CommonModule,
-            HttpModule,
-            ControlsModule,
-            PagesModule,
-            RoutingModule
-        ],
-        providers: [
-            CommunicateService
-        ],
-        exports: [
-            DefaultLayout
-        ]
-    })
-], AppModule);
+var AppModule = (function () {
+    function AppModule() {
+    }
+    AppModule = __decorate([
+        NgModule({
+            declarations: [
+                DefaultLayout,
+                Master1Layout,
+                Master2Layout
+            ],
+            imports: [
+                CommonModule,
+                HttpModule,
+                ControlsModule,
+                PagesModule,
+                RoutingModule
+            ],
+            providers: [
+                CommunicateService
+            ],
+            exports: [
+                DefaultLayout
+            ]
+        })
+    ], AppModule);
+    return AppModule;
+}());
 export { AppModule };
-//# sourceMappingURL=module.js.map

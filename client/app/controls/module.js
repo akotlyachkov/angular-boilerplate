@@ -16,36 +16,38 @@ import { NavbarComponent } from "./navbar/navbar";
 import { JumbotronComponent } from "./jumbotron/jumbotron";
 import { FooterComponent } from "./footer/footer";
 import { BrowserModule } from "@angular/platform-browser";
-let ControlsModule = class ControlsModule {
-};
-ControlsModule = __decorate([
-    NgModule({
-        declarations: [
-            Control1Control,
-            Control2Control,
-            Control3Control,
-            Control4Control,
-            MenusComponent,
-            NavbarComponent,
-            JumbotronComponent,
-            FooterComponent
-        ],
-        imports: [
-            BrowserModule,
-            FormsModule,
-            RouterModule
-        ],
-        exports: [
-            Control1Control,
-            Control2Control,
-            Control3Control,
-            Control4Control,
-            MenusComponent,
-            NavbarComponent,
-            JumbotronComponent,
-            FooterComponent
-        ]
-    })
-], ControlsModule);
+var ControlsModule = (function () {
+    function ControlsModule() {
+    }
+    ControlsModule = __decorate([
+        NgModule({
+            declarations: [
+                Control1Control,
+                Control2Control,
+                Control3Control,
+                Control4Control,
+                MenusComponent,
+                NavbarComponent,
+                JumbotronComponent,
+                FooterComponent
+            ],
+            imports: [
+                BrowserModule,
+                FormsModule,
+                RouterModule
+            ],
+            exports: [
+                Control1Control,
+                Control2Control,
+                Control3Control,
+                Control4Control,
+                MenusComponent,
+                NavbarComponent,
+                JumbotronComponent,
+                FooterComponent
+            ]
+        })
+    ], ControlsModule);
+    return ControlsModule;
+}());
 export { ControlsModule };
-//# sourceMappingURL=module.js.map

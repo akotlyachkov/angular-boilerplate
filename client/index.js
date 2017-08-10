@@ -4,16 +4,13 @@ const express = require('express'),
     config = require('./config.json'),
     engine = require('./build/server').expressEngine;
 
-app.use('/favicon',express.static(path.join(__dirname, 'favicon')));
-app.use('/images',express.static(path.join(__dirname, 'images')));
-app.use('/fonts',express.static(path.join(__dirname, 'fonts')));
+app.use('/favicon', express.static(path.join(__dirname, 'favicon')));
+app.use('/images', express.static(path.join(__dirname, 'images')));
+app.use('/fonts', express.static(path.join(__dirname, 'fonts')));
 
 app.engine('html', engine);
 app.set('view engine', 'html');
 app.set('views', path.join(__dirname, 'views'));
-
-
-
 
 
 app.use('/', function (req, res) {

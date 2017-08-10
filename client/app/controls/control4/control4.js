@@ -5,13 +5,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 import { Component } from "@angular/core";
-let Control4Control = class Control4Control {
-};
-Control4Control = __decorate([
-    Component({
-        selector: 'control4',
-        templateUrl: './control4.html'
-    })
-], Control4Control);
+var Control4Control = (function () {
+    function Control4Control() {
+    }
+    Control4Control = __decorate([
+        Component({
+            selector: 'control4',
+            templateUrl: './control4.html'
+        })
+    ], Control4Control);
+    return Control4Control;
+}());
 export { Control4Control };
-//# sourceMappingURL=control4.js.map

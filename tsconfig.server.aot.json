@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "target": "es5",
-        "module": "es6",
+        "module": "es2015",
         "moduleResolution": "node",
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
@@ -19,7 +19,7 @@
         "baseUrl": "./client/app"
     },
     "include": [
-        "client/app/_server/module.ts"
+        "client/app/_server/aot.ts"
     ],
     "angularCompilerOptions": {
         "skipMetadataEmit": true

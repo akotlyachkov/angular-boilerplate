@@ -1,3 +1,6 @@
-export class NavbarItem {
-}
-//# sourceMappingURL=navbar-item.js.map
+var NavbarItem = (function () {
+    function NavbarItem() {
+    }
+    return NavbarItem;
+}());
+export { NavbarItem };

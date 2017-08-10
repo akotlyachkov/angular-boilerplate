@@ -5,13 +5,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 import { Component } from "@angular/core";
-let Master1Layout = class Master1Layout {
-};
-Master1Layout = __decorate([
-    Component({
-        selector: 'master1',
-        templateUrl: './master1.html'
-    })
-], Master1Layout);
+var Master1Layout = (function () {
+    function Master1Layout() {
+    }
+    Master1Layout = __decorate([
+        Component({
+            selector: 'master1',
+            templateUrl: './master1.html'
+        })
+    ], Master1Layout);
+    return Master1Layout;
+}());
 export { Master1Layout };
-//# sourceMappingURL=master1.js.map

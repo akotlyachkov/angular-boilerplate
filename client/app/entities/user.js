@@ -1,3 +1,6 @@
-export class User {
-}
-//# sourceMappingURL=user.js.map
+var User = (function () {
+    function User() {
+    }
+    return User;
+}());
+export { User };
