@@ -34,3 +34,4 @@ PagesModule = __decorate([
     })
 ], PagesModule);
 export { PagesModule };
+//# sourceMappingURL=module.js.map

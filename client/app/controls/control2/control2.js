@@ -36,3 +36,4 @@ Control2Control = __decorate([
     __metadata("design:paramtypes", [CommunicateService])
 ], Control2Control);
 export { Control2Control };
+//# sourceMappingURL=control2.js.map

@@ -40,3 +40,4 @@ Page2Page = __decorate([
     __metadata("design:paramtypes", [CommunicateService])
 ], Page2Page);
 export { Page2Page };
+//# sourceMappingURL=page2.js.map

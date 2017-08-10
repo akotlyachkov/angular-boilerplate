@@ -31,3 +31,4 @@ Control1Control = __decorate([
     __metadata("design:paramtypes", [CommunicateService])
 ], Control1Control);
 export { Control1Control };
+//# sourceMappingURL=control1.js.map

@@ -15,8 +15,6 @@ const routes: Routes = [
         {path: 'page1', component: Page1Page}
     ]
     },
-
-
     {
         path: 'page2', component: Master2Layout, children: [
         {
@@ -25,8 +23,6 @@ const routes: Routes = [
             {path: 'subpage4', component: Control4Control},
         ]
         },
-
-
     ]
     }
 

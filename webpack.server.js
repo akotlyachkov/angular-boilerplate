@@ -2,9 +2,7 @@ const path = require('path');
 
 module.exports = {
     entry: {
-        //server: './client/index.js'
-        //server: './client/app/server.module.js'
-        server: './client/test.js'
+        server: './client/app/_server/index.js'
     },
     output: {
         filename: '[name].js',

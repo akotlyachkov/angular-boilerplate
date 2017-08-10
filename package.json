@@ -4,15 +4,20 @@
     "description": "angular4 universal sample app build with webpack3",
     "main": "start.js",
     "scripts": {
-        "aot": "ngc -p tsconfig.aot.json",
-        "tsc client": "tsc -p tsconfig.client.json",
-        "tsc server": "tsc -p tsconfig.server.json",
         "gulp": "gulp",
         "gulp watch": "gulp watch",
-        "webpack client": "webpack --config webpack.client.js",
-        "webpack client watch": "webpack --config webpack.client.js --watch",
+
+        "aot browser": "ngc -p tsconfig.browser.aot.json",
+        "aot server": "ngc -p tsconfig.server.aot.json",
+
+        "tsc browser": "tsc -p tsconfig.browser.json",
+        "tsc server": "tsc -p tsconfig.server.json",
+
+        "webpack browser": "webpack --config webpack.browser.js",
+        "webpack browser watch": "webpack --config webpack.browser.js --watch",
         "webpack server": "webpack --config webpack.server.js",
-        "server all":"tsc -p tsconfig.server.json && webpack --config webpack.server.js"
+
+        "all server":"tsc -p tsconfig.server.json && webpack --config webpack.server.js"
     },
     "repository": {
         "type": "git",

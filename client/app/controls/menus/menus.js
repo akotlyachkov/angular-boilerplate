@@ -21,3 +21,4 @@ MenusComponent = __decorate([
     })
 ], MenusComponent);
 export { MenusComponent };
+//# sourceMappingURL=menus.js.map

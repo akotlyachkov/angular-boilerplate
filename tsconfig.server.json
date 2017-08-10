@@ -19,6 +19,6 @@
         "baseUrl": "./client/app"
     },
     "include": [
-        "client/test.ts"
+        "client/app/_server/index.ts"
     ]
 }

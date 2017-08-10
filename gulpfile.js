@@ -4,9 +4,9 @@ const gulp = require('gulp'),
     sass = require('gulp-sass');
 
 const libs = [
-       // 'client/styles/bootstrap.scss',
-       // 'client/styles/awesome.scss',
-       // 'client/styles/roboto.scss'
+        'client/styles/bootstrap.scss',
+        'client/styles/awesome.scss',
+        'client/styles/roboto.scss'
 
     ],
     styles = [
@@ -33,6 +33,6 @@ gulp.task('styles', function () {
 
 gulp.task('watch',function () {
    return gulp.watch(styles, ['styles'])
-})
+});
 
 gulp.task('default', ['libs','styles']);

@@ -14,3 +14,4 @@ IndexPage = __decorate([
     })
 ], IndexPage);
 export { IndexPage };
+//# sourceMappingURL=index.js.map
