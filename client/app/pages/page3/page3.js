@@ -5,15 +5,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 import { Component } from "@angular/core";
-var Page3Page = (function () {
-    function Page3Page() {
-    }
-    Page3Page = __decorate([
-        Component({
-            selector: 'page3',
-            templateUrl: './page3.html'
-        })
-    ], Page3Page);
-    return Page3Page;
-}());
+let Page3Page = class Page3Page {
+};
+Page3Page = __decorate([
+    Component({
+        selector: 'page3',
+        templateUrl: './page3.html'
+    })
+], Page3Page);
 export { Page3Page };

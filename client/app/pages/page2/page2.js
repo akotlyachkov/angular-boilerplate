@@ -10,9 +10,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 import { Component } from "@angular/core";
 import { CommunicateService } from "../../services/communicate";
 import { User } from "../../entities/user";
-var Page2Page = (function () {
-    function Page2Page(srv) {
-        var _this = this;
+let Page2Page = class Page2Page {
+    constructor(srv) {
         this.srv = srv;
         this.model = new User;
         this.observer = {
@@ -23,22 +22,21 @@ var Page2Page = (function () {
             }
         };
         this.model.name = "d";
-        this.srv.filterObservable.subscribe(function (obj) {
+        this.srv.filterObservable.subscribe(obj => {
             obj.name += ' 1';
             console.dir(obj);
-            _this.model = obj;
+            this.model = obj;
         });
     }
-    Page2Page.prototype.testik = function ($event) {
-        console.log("from page2 \"" + $event + "\"");
-    };
-    Page2Page = __decorate([
-        Component({
-            selector: 'page2',
-            templateUrl: './page2.html'
-        }),
-        __metadata("design:paramtypes", [CommunicateService])
-    ], Page2Page);
-    return Page2Page;
-}());
+    testik($event) {
+        console.log(`from page2 "${$event}"`);
+    }
+};
+Page2Page = __decorate([
+    Component({
+        selector: 'page2',
+        templateUrl: './page2.html'
+    }),
+    __metadata("design:paramtypes", [CommunicateService])
+], Page2Page);
 export { Page2Page };

@@ -5,15 +5,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 import { Component } from "@angular/core";
-var FooterComponent = (function () {
-    function FooterComponent() {
-    }
-    FooterComponent = __decorate([
-        Component({
-            selector: 'footer',
-            templateUrl: './footer.html'
-        })
-    ], FooterComponent);
-    return FooterComponent;
-}());
+let FooterComponent = class FooterComponent {
+};
+FooterComponent = __decorate([
+    Component({
+        selector: 'footer',
+        templateUrl: './footer.html'
+    })
+], FooterComponent);
 export { FooterComponent };

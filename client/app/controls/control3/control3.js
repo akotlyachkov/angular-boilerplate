@@ -5,15 +5,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 import { Component } from "@angular/core";
-var Control3Control = (function () {
-    function Control3Control() {
-    }
-    Control3Control = __decorate([
-        Component({
-            selector: 'control3',
-            templateUrl: './control3.html'
-        })
-    ], Control3Control);
-    return Control3Control;
-}());
+let Control3Control = class Control3Control {
+};
+Control3Control = __decorate([
+    Component({
+        selector: 'control3',
+        templateUrl: './control3.html'
+    })
+], Control3Control);
 export { Control3Control };

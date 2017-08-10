@@ -2,25 +2,19 @@ const path = require('path');
 
 module.exports = {
     entry: {
-        server: './client/index.js'
+        //server: './client/index.js'
+        //server: './client/app/server.module.js'
+        server: './client/test.js'
     },
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, './client'),
+        path: path.resolve(__dirname, './client/build'),
         libraryTarget: "commonjs"
 
     },
     target: "node",
     module: {
         rules: [
-            // {test: /\.ts$/, loader: '@ngtools/webpack',options:{
-            //     tsConfigPath: './server.tsconfig.json'
-            // }},
-            // {
-            //      test: /\.js$/,
-            //      use: ["source-map-loader"],
-            //      enforce: "pre"
-            //  },
             {
                 test: /\.js$/,
                 loaders: ['angular2-template-loader'],
@@ -35,12 +29,6 @@ module.exports = {
             }
         ]
     },
-    plugins: [
-        /* new webpack.ContextReplacementPlugin(
-             /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
-             path.join(__dirname, 'client/app')
-         )*/
-    ],
     resolve: {
         extensions: ['.js'],
         modules: [
@@ -48,5 +36,5 @@ module.exports = {
             path.resolve(__dirname, 'client/app')
         ]
     },
-    devtool: false//'source-map',
+    devtool: false
 };

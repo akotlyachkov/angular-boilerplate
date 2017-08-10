@@ -10,30 +10,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 import { Component, EventEmitter, Output } from "@angular/core";
 import { User } from "../../entities/user";
 import { CommunicateService } from "../../services/communicate";
-var Control2Control = (function () {
-    function Control2Control(communicateService) {
+let Control2Control = class Control2Control {
+    constructor(communicateService) {
         this.communicateService = communicateService;
         this.model = new User;
         this.onClick = new EventEmitter();
     }
-    Control2Control.prototype.clickHandler = function () {
+    clickHandler() {
         this.onClick.emit("privet");
         console.log(this.communicateService.test());
-    };
-    Control2Control.prototype.clickReactiveHandler = function () {
+    }
+    clickReactiveHandler() {
         this.communicateService.provideFilter(this.model);
-    };
-    __decorate([
-        Output(),
-        __metadata("design:type", Object)
-    ], Control2Control.prototype, "onClick", void 0);
-    Control2Control = __decorate([
-        Component({
-            selector: 'control2',
-            templateUrl: './control2.html'
-        }),
-        __metadata("design:paramtypes", [CommunicateService])
-    ], Control2Control);
-    return Control2Control;
-}());
+    }
+};
+__decorate([
+    Output(),
+    __metadata("design:type", Object)
+], Control2Control.prototype, "onClick", void 0);
+Control2Control = __decorate([
+    Component({
+        selector: 'control2',
+        templateUrl: './control2.html'
+    }),
+    __metadata("design:paramtypes", [CommunicateService])
+], Control2Control);
 export { Control2Control };

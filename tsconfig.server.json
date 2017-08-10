@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "target": "es5",
+        "target": "es6",
         "module": "es2015",
         "moduleResolution": "node",
         "emitDecoratorMetadata": true,
@@ -19,6 +19,6 @@
         "baseUrl": "./client/app"
     },
     "include": [
-        "client/index.ts"
+        "client/test.ts"
     ]
 }

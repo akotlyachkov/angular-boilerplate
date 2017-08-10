@@ -1,10 +1,6 @@
-/*import 'zone.js/dist/zone-node';
-import 'reflect-metadata';
-import 'rxjs/Rx';
-import { platformServer, renderModuleFactory } from '@angular/platform-server';
-*/
-import {NgModule} from '@angular/core';
+
 import {ServerModule} from '@angular/platform-server';
+import {NgModule} from '@angular/core';
 import {AppModule} from './app.module';
 import {BrowserModule} from '@angular/platform-browser';
 import {DefaultLayout} from "./layouts/default/default";
@@ -21,5 +17,9 @@ import {DefaultLayout} from "./layouts/default/default";
 
 })
 export class ServerAppModule {
+    name: 'Вася';
 
+    test() {
+        console.log(1);
+    }
 }

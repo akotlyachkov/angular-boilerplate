@@ -11,29 +11,26 @@ import { IndexPage } from "./index/index";
 import { ControlsModule } from "../controls/module";
 import { RouterModule } from "@angular/router";
 import { Page3Page } from "./page3/page3";
-var PagesModule = (function () {
-    function PagesModule() {
-    }
-    PagesModule = __decorate([
-        NgModule({
-            declarations: [
-                IndexPage,
-                Page1Page,
-                Page2Page,
-                Page3Page
-            ],
-            imports: [
-                RouterModule,
-                ControlsModule
-            ],
-            exports: [
-                IndexPage,
-                Page1Page,
-                Page2Page,
-                Page3Page
-            ]
-        })
-    ], PagesModule);
-    return PagesModule;
-}());
+let PagesModule = class PagesModule {
+};
+PagesModule = __decorate([
+    NgModule({
+        declarations: [
+            IndexPage,
+            Page1Page,
+            Page2Page,
+            Page3Page
+        ],
+        imports: [
+            RouterModule,
+            ControlsModule
+        ],
+        exports: [
+            IndexPage,
+            Page1Page,
+            Page2Page,
+            Page3Page
+        ]
+    })
+], PagesModule);
 export { PagesModule };

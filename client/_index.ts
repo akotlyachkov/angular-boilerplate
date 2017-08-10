@@ -7,7 +7,12 @@ import  {ngExpressEngine} from '@nguniversal/express-engine';
 import  * as path from 'path';
 import  {ServerAppModule} from './app/server.module';
 
+import http from 'http';
+
+
 let app = express();
+
+let  server = http.createServer(app);
 
 app.engine('html', ngExpressEngine({
     bootstrap: ServerAppModule
@@ -36,6 +41,8 @@ app.use(function (err, req, res, next) {
     console.error(err.message);
     console.error(err.stack);
 });
-
-export {app};
+server.listen(3000, function () {
+    console.log(`Приложение запущено http://localhost:3000`  );
+});
+//export {app};
 //module.exports = app;

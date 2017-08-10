@@ -6,20 +6,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 import { Injectable } from "@angular/core";
 import { Subject } from "rxjs/Subject";
-var CommunicateService = (function () {
-    function CommunicateService() {
+let CommunicateService = class CommunicateService {
+    constructor() {
         this.filterObserver = new Subject();
         this.filterObservable = this.filterObserver.asObservable();
     }
-    CommunicateService.prototype.test = function () {
+    test() {
         return ' проверочка';
-    };
-    CommunicateService.prototype.provideFilter = function (filter) {
+    }
+    provideFilter(filter) {
         this.filterObserver.next(filter);
-    };
-    CommunicateService = __decorate([
-        Injectable()
-    ], CommunicateService);
-    return CommunicateService;
-}());
+    }
+};
+CommunicateService = __decorate([
+    Injectable()
+], CommunicateService);
 export { CommunicateService };

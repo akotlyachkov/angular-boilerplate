@@ -9,23 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 import { Component, ViewChild } from "@angular/core";
 import { Control1Control } from "../../controls/control1/control1";
-var Page1Page = (function () {
-    function Page1Page() {
-    }
-    Page1Page.prototype.clickHandler = function () {
+let Page1Page = class Page1Page {
+    clickHandler() {
         console.log('нажали 1');
         this.control1.logger();
-    };
-    __decorate([
-        ViewChild(Control1Control),
-        __metadata("design:type", Control1Control)
-    ], Page1Page.prototype, "control1", void 0);
-    Page1Page = __decorate([
-        Component({
-            selector: 'page1',
-            templateUrl: './page1.html'
-        })
-    ], Page1Page);
-    return Page1Page;
-}());
+    }
+};
+__decorate([
+    ViewChild(Control1Control),
+    __metadata("design:type", Control1Control)
+], Page1Page.prototype, "control1", void 0);
+Page1Page = __decorate([
+    Component({
+        selector: 'page1',
+        templateUrl: './page1.html'
+    })
+], Page1Page);
 export { Page1Page };

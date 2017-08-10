@@ -5,20 +5,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 import { Component } from "@angular/core";
-var DefaultLayout = (function () {
-    function DefaultLayout() {
+let DefaultLayout = class DefaultLayout {
+    constructor() {
         this.navs = [
             { path: '/', name: 'Главная' },
             { path: '/page1', name: 'Страница 1' },
             { path: '/page2', name: 'Страница 2' }
         ];
     }
-    DefaultLayout = __decorate([
-        Component({
-            selector: 'application',
-            templateUrl: './default.html'
-        })
-    ], DefaultLayout);
-    return DefaultLayout;
-}());
+};
+DefaultLayout = __decorate([
+    Component({
+        selector: 'application',
+        templateUrl: './default.html'
+    })
+], DefaultLayout);
 export { DefaultLayout };

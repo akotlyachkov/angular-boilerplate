@@ -5,15 +5,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 import { Component } from "@angular/core";
-var JumbotronComponent = (function () {
-    function JumbotronComponent() {
-    }
-    JumbotronComponent = __decorate([
-        Component({
-            selector: 'jumbotron',
-            templateUrl: './jumbotron.html'
-        })
-    ], JumbotronComponent);
-    return JumbotronComponent;
-}());
+let JumbotronComponent = class JumbotronComponent {
+};
+JumbotronComponent = __decorate([
+    Component({
+        selector: 'jumbotron',
+        templateUrl: './jumbotron.html'
+    })
+], JumbotronComponent);
 export { JumbotronComponent };

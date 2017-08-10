@@ -8,19 +8,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component, Input } from "@angular/core";
-var MenusComponent = (function () {
-    function MenusComponent() {
-    }
-    __decorate([
-        Input(),
-        __metadata("design:type", Array)
-    ], MenusComponent.prototype, "menus", void 0);
-    MenusComponent = __decorate([
-        Component({
-            selector: 'menus',
-            templateUrl: './menus.html'
-        })
-    ], MenusComponent);
-    return MenusComponent;
-}());
+let MenusComponent = class MenusComponent {
+};
+__decorate([
+    Input(),
+    __metadata("design:type", Array)
+], MenusComponent.prototype, "menus", void 0);
+MenusComponent = __decorate([
+    Component({
+        selector: 'menus',
+        templateUrl: './menus.html'
+    })
+], MenusComponent);
 export { MenusComponent };

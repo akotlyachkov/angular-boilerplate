@@ -5,15 +5,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 import { Component } from "@angular/core";
-var Master2Layout = (function () {
-    function Master2Layout() {
-    }
-    Master2Layout = __decorate([
-        Component({
-            selector: 'master2',
-            templateUrl: './master2.html'
-        })
-    ], Master2Layout);
-    return Master2Layout;
-}());
+let Master2Layout = class Master2Layout {
+};
+Master2Layout = __decorate([
+    Component({
+        selector: 'master2',
+        templateUrl: './master2.html'
+    })
+], Master2Layout);
 export { Master2Layout };

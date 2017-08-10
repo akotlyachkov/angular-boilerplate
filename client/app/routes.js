@@ -13,7 +13,7 @@ import { Master1Layout } from "./layouts/master1/master1";
 import { Master2Layout } from "./layouts/master2/master2";
 import { Control3Control } from "./controls/control3/control3";
 import { Control4Control } from "./controls/control4/control4";
-var routes = [
+const routes = [
     {
         path: '', component: Master1Layout, children: [
             { path: '', component: IndexPage },
@@ -31,15 +31,12 @@ var routes = [
         ]
     }
 ];
-var RoutingModule = (function () {
-    function RoutingModule() {
-    }
-    RoutingModule = __decorate([
-        NgModule({
-            imports: [RouterModule.forRoot(routes)],
-            exports: [RouterModule]
-        })
-    ], RoutingModule);
-    return RoutingModule;
-}());
+let RoutingModule = class RoutingModule {
+};
+RoutingModule = __decorate([
+    NgModule({
+        imports: [RouterModule.forRoot(routes)],
+        exports: [RouterModule]
+    })
+], RoutingModule);
 export { RoutingModule };

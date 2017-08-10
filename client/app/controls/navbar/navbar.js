@@ -8,19 +8,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component, Input } from "@angular/core";
-var NavbarComponent = (function () {
-    function NavbarComponent() {
-    }
-    __decorate([
-        Input(),
-        __metadata("design:type", Array)
-    ], NavbarComponent.prototype, "navs", void 0);
-    NavbarComponent = __decorate([
-        Component({
-            selector: 'navbar',
-            templateUrl: './navbar.html'
-        })
-    ], NavbarComponent);
-    return NavbarComponent;
-}());
+let NavbarComponent = class NavbarComponent {
+};
+__decorate([
+    Input(),
+    __metadata("design:type", Array)
+], NavbarComponent.prototype, "navs", void 0);
+NavbarComponent = __decorate([
+    Component({
+        selector: 'navbar',
+        templateUrl: './navbar.html'
+    })
+], NavbarComponent);
 export { NavbarComponent };
