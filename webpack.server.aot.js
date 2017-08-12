@@ -3,7 +3,7 @@ const webpack = require('webpack'),
 
 module.exports = {
     entry: {
-        server: './client/app/_server/index.js'
+        server: './client/app/_server/aot.js'
     },
     output: {
         filename: '[name].js',

@@ -8,21 +8,18 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppModule } from '../module';
 import { DefaultLayout } from "../layouts/default/default";
-var BrowserAppModule = (function () {
-    function BrowserAppModule() {
-    }
-    BrowserAppModule = __decorate([
-        NgModule({
-            bootstrap: [DefaultLayout],
-            imports: [
-                BrowserModule.withServerTransition({
-                    appId: 'my-app-id'
-                }),
-                AppModule
-            ]
-        })
-    ], BrowserAppModule);
-    return BrowserAppModule;
-}());
+let BrowserAppModule = class BrowserAppModule {
+};
+BrowserAppModule = __decorate([
+    NgModule({
+        bootstrap: [DefaultLayout],
+        imports: [
+            BrowserModule.withServerTransition({
+                appId: 'my-app-id'
+            }),
+            AppModule
+        ]
+    })
+], BrowserAppModule);
 export { BrowserAppModule };
 //# sourceMappingURL=module.js.map

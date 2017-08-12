@@ -6,22 +6,21 @@
     "scripts": {
         "gulp": "gulp",
         "gulp watch": "gulp watch",
-
         "ngc browser": "ngc -p tsconfig.browser.ngc.json",
         "ngc server": "ngc -p tsconfig.server.ngc.json",
-
-        "aot browser": "ngc -p tsconfig.browser.aot.json",
-        "aot server": "ngc -p tsconfig.server.aot.json",
-
+        "tsc browser aot": "tsc -p tsconfig.browser.aot.json",
+        "tsc server aot": "tsc -p tsconfig.server.aot.json",
         "tsc browser": "tsc -p tsconfig.browser.json",
         "tsc server": "tsc -p tsconfig.server.json",
-
         "webpack browser": "webpack --config webpack.browser.js",
         "webpack browser watch": "webpack --config webpack.browser.js --watch",
         "webpack server": "webpack --config webpack.server.js",
         "webpack aot": "webpack --config webpack.server.aot.js && webpack --config webpack.browser.aot.js",
-
-        "all server":"tsc -p tsconfig.server.json && webpack --config webpack.server.js"
+        "all server": "tsc -p tsconfig.server.json && webpack --config webpack.server.js",
+        "rollup browser": "rollup --config rollup.browser.js",
+        "rollup browser aot": "rollup --config rollup.browser.aot.js",
+        "rollup server": "rollup --config rollup.server.js",
+        "rollup server aot": "rollup --config rollup.server.aot.js"
     },
     "repository": {
         "type": "git",
@@ -61,6 +60,7 @@
         "express": "^4.15.4",
         "font-awesome": "github:fortawesome/Font-Awesome",
         "helmet": "^3.8.1",
+        "node-sass": "^4.5.3",
         "reflect-metadata": "^0.1.10",
         "rxjs": "^5.4.2",
         "zone.js": "^0.8.16"
@@ -68,17 +68,19 @@
     "devDependencies": {
         "@ngtools/webpack": "^1.5.5",
         "@types/core-js": "^0.9.42",
+        "@types/express": "^4.0.36",
         "@types/node": "^8.0.19",
-        "@types/express":"^4.0.36",
         "angular2-template-loader": "^0.6.2",
         "awesome-typescript-loader": "^3.2.2",
         "base64-font-loader": "0.0.4",
         "bootstrap-sass": "^3.3.7",
         "css-loader": "^0.28.4",
+        "del": "^3.0.0",
         "file-loader": "^0.11.2",
         "gulp": "^3.9.1",
         "gulp-concat": "^2.6.1",
         "gulp-concat-css": "^2.3.0",
+        "gulp-inject": "^4.2.0",
         "gulp-sass": "^3.1.0",
         "gulp-sourcemaps": "^2.6.0",
         "html-loader": "^0.5.0",
@@ -87,6 +89,7 @@
         "rollup-plugin-angular": "^0.4.8",
         "rollup-plugin-commonjs": "^8.1.0",
         "rollup-plugin-node-resolve": "^3.0.0",
+        "rxjs-es": "^5.0.0-beta.12",
         "sass-loader": "^6.0.6",
         "source-map-loader": "^0.2.1",
         "style-loader": "^0.18.2",

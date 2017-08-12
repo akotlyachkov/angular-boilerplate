@@ -1,24 +1,30 @@
 const express = require('express'),
     app = express(),
     path = require('path'),
-    config = require('./config.json'),
-    engine = require('./build/server').expressEngine;
+    config = require('./config.json');
+
 
 app.use('/favicon', express.static(path.join(__dirname, 'favicon')));
 app.use('/images', express.static(path.join(__dirname, 'images')));
 app.use('/fonts', express.static(path.join(__dirname, 'fonts')));
 
-app.engine('html', engine);
-app.set('view engine', 'html');
-app.set('views', path.join(__dirname, 'views'));
-
+if (app.get('mode') === 'server') {
+    const engine = require('./build/server').expressEngine;
+    app.engine('html', engine);
+    app.set('view engine', 'html');
+    app.set('views', path.join(__dirname, 'views'));
+}
 
 app.use('/', function (req, res) {
-//res.sendFile('index.html',{root:path.join(__dirname,'views')})
-    res.render('index', {
-        req: req,
-        res: res
-    });
+    if (app.get('mode') === 'server') {
+        res.render('index', {
+            req: req,
+            res: res
+        });
+    }
+    else {
+        res.sendFile('index.html', {root: path.join(__dirname, 'views')})
+    }
 });
 
 app.use(function (req, res, next) {

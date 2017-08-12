@@ -1,4 +1,4 @@
-import 'zone.js'
+/*import 'zone.js'
 import 'reflect-metadata'
 import 'rxjs';
 
@@ -7,7 +7,7 @@ import '@angular/platform-browser-dynamic';
 import '@angular/core';
 import '@angular/common';
 import '@angular/http';
-import '@angular/router';
+import '@angular/router';*/
 
 
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
@@ -16,7 +16,7 @@ import {enableProdMode} from "@angular/core";
 
 enableProdMode();
 
-export function main() {
+function main() {
     platformBrowserDynamic().bootstrapModuleFactory(BrowserAppModuleNgFactory);
 }
 
