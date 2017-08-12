@@ -20,12 +20,17 @@
     <link rel="manifest" href="/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
-    <link rel="stylesheet" href="libs.css">
-    <link rel="stylesheet" href="styles.css">
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/libs.css">
+    <link rel="stylesheet" href="/styles.css">
+    <!-- endinject -->
 </head>
 <body>
 <application class="layout">Загрузка...</application>
-<!--<script src="common.js"></script>-->
-<script src="app.js"></script>
+<!-- inject:js -->
+<script src="/node_modules/reflect-metadata/Reflect.js"></script>
+<script src="/node_modules/zone.js/dist/zone.js"></script>
+<script src="/bundle.js"></script>
+<!-- endinject -->
 </body>
 </html>

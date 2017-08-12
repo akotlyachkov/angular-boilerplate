@@ -68,4 +68,3 @@ export var BrowserAppModuleNgFactory = i0.ɵcmf(i1.BrowserAppModule, [i2.Default
             [2, i15.RouteReuseStrategy]]), i0.ɵmpd(512, i15.RouterModule, i15.RouterModule, [[2, i15.ɵa], [2, i15.Router]]), i0.ɵmpd(512, i24.ControlsModule, i24.ControlsModule, []), i0.ɵmpd(512, i25.PagesModule, i25.PagesModule, []),
         i0.ɵmpd(512, i26.RoutingModule, i26.RoutingModule, []), i0.ɵmpd(512, i27.AppModule, i27.AppModule, []), i0.ɵmpd(512, i1.BrowserAppModule, i1.BrowserAppModule, [])]);
 });
-//# sourceMappingURL=module.ngfactory.js.map
