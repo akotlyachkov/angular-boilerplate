@@ -3,7 +3,8 @@ const webpack = require('webpack'),
 
 module.exports = {
     entry: {
-        browser: './client/app/_browser/aot.js'
+        browser: './client/app/_browser/aot.js',
+        ie: './client/app/_browser/ie.js'
     },
     output: {
         filename: '[name].js',
