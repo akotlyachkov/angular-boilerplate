@@ -3,11 +3,11 @@ const webpack = require('webpack'),
 
 module.exports = {
     entry: {
-        app: './client/app/_browser/index.js'
+        browser: './client/app/_browser/index.js',
     },
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, './client/build')
+        path: path.resolve(__dirname, 'client/build')
     },
     module: {
         rules: [
@@ -30,20 +30,6 @@ module.exports = {
             }
         ]
     },
-    plugins: [
-        new webpack.ContextReplacementPlugin(
-            /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
-            path.join(__dirname, 'client/app')
-        ),
-        new webpack.optimize.CommonsChunkPlugin({
-            name: 'common',
-            minChunks: 2,
-            chunks: [
-                'app',
-                'libs'
-            ]
-        })
-    ],
     resolve: {
         extensions: ['.js', '.html'],
         modules: [

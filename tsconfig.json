@@ -6,7 +6,8 @@
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "removeComments": true,
-        "sourceMap": false,
+        "inlineSourceMap": true,
+        "inlineSources": true,
         "noImplicitAny": false,
         "suppressImplicitAnyIndexErrors": true,
         "lib": [
@@ -14,11 +15,12 @@
             "dom"
         ],
         "typeRoots": [
-            "./node_modules/@types"
+            "node_modules/@types"
         ],
-        "baseUrl": "./client/app"
+        "baseUrl": "client/app"
     },
     "include": [
+        "client/app/_browser/index.ts",
         "client/app/_server/index.ts"
     ]
 }

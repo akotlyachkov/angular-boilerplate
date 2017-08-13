@@ -5,15 +5,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 import { Component } from "@angular/core";
-var Master2Layout = (function () {
-    function Master2Layout() {
-    }
-    Master2Layout = __decorate([
-        Component({
-            selector: 'master2',
-            templateUrl: './master2.html'
-        })
-    ], Master2Layout);
-    return Master2Layout;
-}());
+let Master2Layout = class Master2Layout {
+};
+Master2Layout = __decorate([
+    Component({
+        selector: 'master2',
+        templateUrl: './master2.html'
+    })
+], Master2Layout);
 export { Master2Layout };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFzdGVyMi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm1hc3RlcjIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQUEsT0FBTyxFQUFDLFNBQVMsRUFBQyxNQUFNLGVBQWUsQ0FBQztBQU94QyxJQUFhLGFBQWEsR0FBMUI7Q0FFQyxDQUFBO0FBRlksYUFBYTtJQUp6QixTQUFTLENBQUM7UUFDUCxRQUFRLEVBQUUsU0FBUztRQUNuQixXQUFXLEVBQUUsZ0JBQWdCO0tBQ2hDLENBQUM7R0FDVyxhQUFhLENBRXpCO1NBRlksYUFBYSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7Q29tcG9uZW50fSBmcm9tIFwiQGFuZ3VsYXIvY29yZVwiO1xyXG5cclxuXHJcbkBDb21wb25lbnQoe1xyXG4gICAgc2VsZWN0b3I6ICdtYXN0ZXIyJyxcclxuICAgIHRlbXBsYXRlVXJsOiAnLi9tYXN0ZXIyLmh0bWwnXHJcbn0pXHJcbmV4cG9ydCBjbGFzcyBNYXN0ZXIyTGF5b3V0IHtcclxuXHJcbn0iXX0=

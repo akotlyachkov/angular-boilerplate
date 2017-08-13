@@ -14,12 +14,13 @@
             "dom"
         ],
         "typeRoots": [
-            "./node_modules/@types"
+            "node_modules/@types"
         ],
-        "baseUrl": "./client/app"
+        "baseUrl": "client/app"
     },
     "include": [
-        "client/app/_server/aot.ts"
+        "client/app/_browser/module.ts",
+        "client/app/_server/module.ts"
     ],
     "angularCompilerOptions": {
         "skipMetadataEmit": true

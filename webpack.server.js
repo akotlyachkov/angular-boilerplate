@@ -1,4 +1,5 @@
-const path = require('path');
+const webpack = require('webpack'),
+    path = require('path');
 
 module.exports = {
     entry: {
@@ -6,17 +7,15 @@ module.exports = {
     },
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, './client/build'),
-        libraryTarget: "commonjs"
-
+        path: path.resolve(__dirname, '../client/build')
     },
-    target: "node",
     module: {
         rules: [
+
             {
                 test: /\.js$/,
                 loaders: ['angular2-template-loader'],
-                include: path.join(__dirname, 'client/app'),
+                include: path.join(__dirname, '../client/app'),
             },
             {
                 test: /\.html$/,
@@ -27,12 +26,16 @@ module.exports = {
             }
         ]
     },
+    target: 'node',
+
+
     resolve: {
-        extensions: ['.js'],
+        extensions: ['.js', '.html'],
         modules: [
-            path.resolve(__dirname, 'node_modules'),
-            path.resolve(__dirname, 'client/app')
+            path.resolve(__dirname, '../node_modules'),
+            path.resolve(__dirname, '../client/app')
         ]
+
     },
-    devtool: false
+    devtool: false//'source-map',
 };
