@@ -1,3 +1,6 @@
-export class NavbarItem {
-}
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibmF2YmFyLWl0ZW0uanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuYXZiYXItaXRlbS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxNQUFNO0NBR0wiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgY2xhc3MgTmF2YmFySXRlbXtcclxuICAgIHBhdGg6c3RyaW5nO1xyXG4gICAgbmFtZTpzdHJpbmc7XHJcbn0iXX0=
+var NavbarItem = (function () {
+    function NavbarItem() {
+    }
+    return NavbarItem;
+}());
+export { NavbarItem };

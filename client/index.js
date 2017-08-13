@@ -1,14 +1,14 @@
 const express = require('express'),
     app = express(),
     path = require('path'),
-    config = require('./config.json');
-
+    config = require('./config.json'),
+    mode = process.env.mode || 'browser';
 
 app.use('/favicon', express.static(path.join(__dirname, 'favicon')));
 app.use('/images', express.static(path.join(__dirname, 'images')));
 app.use('/fonts', express.static(path.join(__dirname, 'fonts')));
 
-if (app.get('mode') === 'server') {
+if (mode === 'server') {
     const engine = require('./build/server').expressEngine;
     app.engine('html', engine);
     app.set('view engine', 'html');
@@ -16,7 +16,7 @@ if (app.get('mode') === 'server') {
 }
 
 app.use('/', function (req, res) {
-    if (app.get('mode') === 'server') {
+    if (mode === 'server') {
         res.render('index', {
             req: req,
             res: res

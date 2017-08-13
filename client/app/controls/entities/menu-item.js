@@ -1,3 +1,6 @@
-export class MenuItem {
-}
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWVudS1pdGVtLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibWVudS1pdGVtLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE1BQU07Q0FHTCIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjbGFzcyBNZW51SXRlbXtcclxuICAgIHBhdGg6c3RyaW5nO1xyXG4gICAgbmFtZTpzdHJpbmc7XHJcbn0iXX0=
+var MenuItem = (function () {
+    function MenuItem() {
+    }
+    return MenuItem;
+}());
+export { MenuItem };

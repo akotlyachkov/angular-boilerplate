@@ -7,7 +7,7 @@ module.exports = {
     },
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, '../client/build')
+        path: path.resolve(__dirname, 'client/build')
     },
     module: {
         rules: [
@@ -15,7 +15,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 loaders: ['angular2-template-loader'],
-                include: path.join(__dirname, '../client/app'),
+                include: path.join(__dirname, 'client/app'),
             },
             {
                 test: /\.html$/,
@@ -32,8 +32,8 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.html'],
         modules: [
-            path.resolve(__dirname, '../node_modules'),
-            path.resolve(__dirname, '../client/app')
+            path.resolve(__dirname, 'node_modules'),
+            path.resolve(__dirname, 'client/app')
         ]
 
     },

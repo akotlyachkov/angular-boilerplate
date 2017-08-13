@@ -7,7 +7,7 @@ module.exports = {
     },
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, './client/build')
+        path: path.resolve(__dirname, 'client/build')
     },
     plugins: [
         new webpack.optimize.UglifyJsPlugin({
@@ -18,8 +18,8 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.html'],
         modules: [
-            path.resolve(__dirname, '../node_modules'),
-            path.resolve(__dirname, '../client/app')
+            path.resolve(__dirname, 'node_modules'),
+            path.resolve(__dirname, 'client/app')
         ]
     },
     devtool: false,

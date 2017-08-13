@@ -7,7 +7,7 @@ import {enableProdMode} from "@angular/core";
 
 enableProdMode();
 
-let engine = ngExpressEngine({
+let expressEngine = ngExpressEngine({
     bootstrap: ServerAppModuleNgFactory
 });
-export {engine};
+export {expressEngine};
