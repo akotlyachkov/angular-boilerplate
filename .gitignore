@@ -1,3 +1,9 @@
 client/build
 node_modules
 .idea
+client/app/**/*.js
+client/app/**/*.js.map
+client/app/**/*.ngfactory.js
+client/app/**/*.ngfactory.ts
+client/app/**/*.ngsummary.json
+npm-debug.log

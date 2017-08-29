@@ -5,15 +5,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 import { Component } from "@angular/core";
-var Page3Page = (function () {
-    function Page3Page() {
-    }
-    Page3Page = __decorate([
-        Component({
-            selector: 'page3',
-            templateUrl: './page3.html'
-        })
-    ], Page3Page);
-    return Page3Page;
-}());
+let Page3Page = class Page3Page {
+};
+Page3Page = __decorate([
+    Component({
+        selector: 'page3',
+        templateUrl: './page3.html'
+    })
+], Page3Page);
 export { Page3Page };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFnZTMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJwYWdlMy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7QUFBQSxPQUFPLEVBQUMsU0FBUyxFQUFDLE1BQU0sZUFBZSxDQUFDO0FBVXhDLElBQWEsU0FBUyxHQUF0QjtDQUVDLENBQUE7QUFGWSxTQUFTO0lBSnJCLFNBQVMsQ0FBQztRQUNQLFFBQVEsRUFBRSxPQUFPO1FBQ2pCLFdBQVcsRUFBRSxjQUFjO0tBQzlCLENBQUM7R0FDVyxTQUFTLENBRXJCO1NBRlksU0FBUyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7Q29tcG9uZW50fSBmcm9tIFwiQGFuZ3VsYXIvY29yZVwiO1xyXG5pbXBvcnQge0NvbW11bmljYXRlU2VydmljZX0gZnJvbSBcIi4uLy4uL3NlcnZpY2VzL2NvbW11bmljYXRlXCI7XHJcbmltcG9ydCB7VXNlcn0gZnJvbSBcIi4uLy4uL2VudGl0aWVzL3VzZXJcIjtcclxuXHJcblxyXG5cclxuQENvbXBvbmVudCh7XHJcbiAgICBzZWxlY3RvcjogJ3BhZ2UzJyxcclxuICAgIHRlbXBsYXRlVXJsOiAnLi9wYWdlMy5odG1sJ1xyXG59KVxyXG5leHBvcnQgY2xhc3MgUGFnZTNQYWdlIHtcclxuXHJcbn0iXX0=

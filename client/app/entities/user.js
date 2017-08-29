@@ -1,6 +1,3 @@
-var User = (function () {
-    function User() {
-    }
-    return User;
-}());
-export { User };
+export class User {
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidXNlci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbInVzZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsTUFBTTtDQUVMIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGNsYXNzIFVzZXIge1xyXG4gICAgbmFtZTogc3RyaW5nO1xyXG59Il19
