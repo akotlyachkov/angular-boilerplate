@@ -13,7 +13,8 @@ import { Master1Layout } from "./layouts/master1/master1";
 import { Master2Layout } from "./layouts/master2/master2";
 import { ControlsModule } from "./controls/module";
 import { CommonModule } from "@angular/common";
-import { HttpModule } from "@angular/http";
+import { DataProvider } from "./providers/data";
+import { HttpClientModule } from "@angular/common/http";
 var AppModule = (function () {
     function AppModule() {
     }
@@ -26,13 +27,14 @@ var AppModule = (function () {
             ],
             imports: [
                 CommonModule,
-                HttpModule,
+                HttpClientModule,
                 ControlsModule,
                 PagesModule,
                 RoutingModule
             ],
             providers: [
-                CommunicateService
+                CommunicateService,
+                DataProvider
             ],
             exports: [
                 DefaultLayout

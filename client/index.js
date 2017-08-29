@@ -14,7 +14,7 @@ if (mode === 'server') {
     app.engine('html', engine);
     app.set('view engine', 'html');
     app.set('views', path.join(__dirname, 'views'));
-    app.use(minifyHTML({override: true}))
+    //app.use(minifyHTML({override: true}))
 }
 
 app.use('/', function (req, res) {

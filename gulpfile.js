@@ -22,7 +22,8 @@ const libs = [
         'node_modules/zone.js/dist/zone.js',
     ],
     injectable = [
-        'client/build/ie.js',
+        //'client/build/ie.js',
+        'client/build/common.js',
         'client/build/libs.js',
         'client/build/browser.js',
         'client/build/*.css'];

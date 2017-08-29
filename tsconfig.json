@@ -21,6 +21,7 @@
     },
     "include": [
         "client/app/_browser/index.ts",
+        "client/app/_browser/libs.ts",
         "client/app/_server/index.ts"
     ]
 }

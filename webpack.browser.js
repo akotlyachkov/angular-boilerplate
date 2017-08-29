@@ -4,6 +4,7 @@ const webpack = require('webpack'),
 module.exports = {
     entry: {
         browser: './client/app/_browser/index.js',
+        libs: './client/app/_browser/libs.js'
     },
     output: {
         filename: '[name].js',
@@ -30,6 +31,16 @@ module.exports = {
             }
         ]
     },
+    plugins: [
+        new webpack.optimize.CommonsChunkPlugin({
+            name:'common',
+            minChunks: 2,
+            chunks: [
+                'browser',
+                'libs'
+            ]
+        })
+    ],
     resolve: {
         extensions: ['.js', '.html'],
         modules: [

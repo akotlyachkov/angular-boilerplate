@@ -1,7 +1,7 @@
 import {Component} from "@angular/core";
 import {CommunicateService} from "../../services/communicate";
 import {User} from "../../entities/user";
-
+import {DataProvider} from "../../providers/data";
 
 
 @Component({
@@ -19,7 +19,8 @@ export class Page2Page {
         }
     };
 
-    constructor(private srv: CommunicateService) {
+    constructor(private srv: CommunicateService,
+                private dataProvider: DataProvider) {
         this.model.name = "d";
         this.srv.filterObservable.subscribe(obj => {
             obj.name += ' 1';
@@ -30,5 +31,15 @@ export class Page2Page {
 
     testik($event: string): void {
         console.log(`from page2 "${$event}"`)
+    }
+
+    ngOnInit() {
+        this.dataProvider.config().subscribe(resp => {
+                console.log(resp)
+            }, err => {
+                console.log(err);
+                console.log("Error page2 occured.")
+            }
+        )
     }
 }

@@ -5,6 +5,7 @@ import * as i3 from '../../controls/control2/control2';
 import * as i4 from '../../services/communicate';
 import * as i5 from '@angular/router';
 import * as i6 from '@angular/common';
+import * as i7 from '../../providers/data';
 var styles_Page2Page = [];
 export var RenderType_Page2Page = i0.ɵcrt({ encapsulation: 2, styles: styles_Page2Page,
     data: {} });
@@ -67,6 +68,8 @@ export function View_Page2Page_0(_l) {
 }
 export function View_Page2Page_Host_0(_l) {
     return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, null, null, 1, 'page2', [], null, null, null, View_Page2Page_0, RenderType_Page2Page)),
-        i0.ɵdid(49152, null, 0, i1.Page2Page, [i4.CommunicateService], null, null)], null, null);
+        i0.ɵdid(114688, null, 0, i1.Page2Page, [i4.CommunicateService, i7.DataProvider], null, null)], function (_ck, _v) {
+        _ck(_v, 1, 0);
+    }, null);
 }
 export var Page2PageNgFactory = i0.ɵccf('page2', i1.Page2Page, View_Page2Page_Host_0, {}, {}, []);
