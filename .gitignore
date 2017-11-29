@@ -4,6 +4,6 @@ node_modules
 client/app/**/*.js
 client/app/**/*.js.map
 client/app/**/*.ngfactory.js
-client/app/**/*.ngfactory.ts
 client/app/**/*.ngsummary.json
+client/app/**/*.metadata.json
 npm-debug.log
