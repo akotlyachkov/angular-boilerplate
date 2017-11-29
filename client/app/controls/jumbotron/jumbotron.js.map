@@ -1,1 +1,1 @@
-{"version":3,"file":"jumbotron.js","sourceRoot":"","sources":["jumbotron.ts"],"names":[],"mappings":";;;;;;AAAA,OAAO,EAAC,SAAS,EAAQ,MAAM,eAAe,CAAC;AAM/C,IAAa,kBAAkB,GAA/B;CAGC,CAAA;AAHY,kBAAkB;IAJ9B,SAAS,CAAC;QACP,QAAQ,EAAE,WAAW;QACrB,WAAW,EAAE,kBAAkB;KAClC,CAAC;GACW,kBAAkB,CAG9B;SAHY,kBAAkB"}
+{"version":3,"file":"jumbotron.js","sourceRoot":"","sources":["jumbotron.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,SAAS,EAAQ,MAAM,eAAe,CAAC;AAM/C,MAAM;;;YAJL,SAAS,SAAC;gBACP,QAAQ,EAAE,WAAW;gBACrB,WAAW,EAAE,kBAAkB;aAClC"}

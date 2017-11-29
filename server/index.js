@@ -1,7 +1,7 @@
 const express = require('express'),
     app = express(),
     config = require('./config');
-    configClient = require('../client/config');
+    configClient = require('../config');
 
 app.get('/config', function (req, res, next) {
     res.send(configClient);

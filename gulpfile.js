@@ -1,76 +1,64 @@
-const gulp = require('gulp'),
+let gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
-    concat = require('gulp-concat'),
     inject = require('gulp-inject'),
-    del = require('del'),
-    sass = require('gulp-sass'),
+    concat = require('gulp-concat'),
+    uglify = require('gulp-uglify'),
     clean = require('gulp-clean-css'),
-    uglify = require('gulp-uglify');
+    sass = require('gulp-sass'),
+    pug = require('gulp-pug');
 
-const libs = [
-        'client/styles/bootstrap.scss',
-        'client/styles/awesome.scss',
-        'client/styles/roboto.scss'
-    ],
-    styles = [
+let commonCss = [
         'client/styles/common.scss',
-        'client/styles/sticky.scss',
-        'client/app/**/*.scss'
     ],
-    scripts = [
-        'node_modules/reflect-metadata/Reflect.js',
-        'node_modules/zone.js/dist/zone.js',
+    loadingCss = [
+        'client/styles/loading.scss',
     ],
-    injectable = [
-        //'client/build/ie.js',
-        'client/build/common.js',
-        'client/build/libs.js',
-        'client/build/browser.js',
-        'client/build/*.css'];
+    injectJs = [
+        'client/build/browser.js'
+    ],
+    injectCss = [
+        'client/build/styles.css'
+    ],
+    pugs = [
+        'client/views/browser.pug',
+        'client/views/server.pug'
+    ],
+    destination = 'client/build';
 
-gulp.task('release-css', function () {
-    return gulp.src(libs.concat(styles))
-        .pipe(sass())
+gulp.task('commonCss', function () {
+    return gulp
+        .src(commonCss)
+        //.pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
         .pipe(concat('styles.css'))
         .pipe(clean())
-        .pipe(gulp.dest('client/build'))
+        .pipe(gulp.dest(destination))
 });
 
-gulp.task('release-js', function () {
-    return gulp.src(scripts)
-        .pipe(concat('libs.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest('client/build'))
+gulp.task('loadingCss', function () {
+    return gulp
+        .src(loadingCss)
+        .pipe(sass().on('error', sass.logError))
+        .pipe(concat('loading.css'))
+        .pipe(clean())
+        .pipe(gulp.dest(destination))
 });
-
-gulp.task('libs', function () {
-    return gulp.src(libs)
-        .pipe(sass())
-        .pipe(concat('libs.css'))
-        .pipe(gulp.dest('client/build'))
-});
-
-gulp.task('styles', function () {
-    return gulp.src(styles)
-        .pipe(sourcemaps.init())
-        .pipe(sass())
-        .pipe(concat('styles.css'))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('client/build'))
-});
-
-gulp.task('watch', () => gulp.watch(styles, ['styles']));
 
 gulp.task('inject', function () {
-    const sources = gulp.src(injectable, {read: false});
-    return gulp.src('client/views/index.html')
-        .pipe(inject(sources, {ignorePath: 'client/build/'}))
+    const cssFiles = gulp.src(injectCss);
+    const jsFiles = gulp.src(injectJs);
+    return gulp.src(pugs)
+        .pipe(inject(cssFiles, {ignorePath: 'client/build',addPrefix:'css'}))
+        .pipe(inject(jsFiles, {ignorePath: 'client/build',addPrefix:'js'}))
+        .pipe(pug())
         .pipe(gulp.dest('client/views'));
 });
 
-gulp.task('clean', () => del('client/build'));
-gulp.task('clean:styles', () => del('client/build/*(.css|.css.map)'));
-gulp.task('clean:browser', () => del(['client/build/*(.js|.js.map)', '!client/build/server.js']));
-gulp.task('clean:server', () => del('client/build/server.js'));
+gulp.task('watch', ['commonCss'], function () {
+    return gulp.watch([
+        'client/styles/**/*.scss',
+        'client/app/**/*.scss'
+    ], ['default'])
+});
 
-gulp.task('default', ['libs', 'styles']);
+gulp.task('default',['commonCss','loadingCss','inject']);

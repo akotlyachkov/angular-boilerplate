@@ -1,9 +1,9 @@
-
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
-import {BrowserAppModule} from "./module";
+import 'zone.js'
+import {platformBrowser} from '@angular/platform-browser';
+import {BrowserAppModuleNgFactory} from "./module.ngfactory";
 
 function start() {
-    platformBrowserDynamic().bootstrapModule(BrowserAppModule);
+    platformBrowser().bootstrapModuleFactory(BrowserAppModuleNgFactory);
 }
 
 document.addEventListener('DOMContentLoaded', start, false);

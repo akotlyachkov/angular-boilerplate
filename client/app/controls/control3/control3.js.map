@@ -1,1 +1,1 @@
-{"version":3,"file":"control3.js","sourceRoot":"","sources":["control3.ts"],"names":[],"mappings":";;;;;;AAAA,OAAO,EAAC,SAAS,EAAC,MAAM,eAAe,CAAC;AAMxC,IAAa,eAAe,GAA5B;CAGC,CAAA;AAHY,eAAe;IAJ3B,SAAS,CAAC;QACP,QAAQ,EAAE,UAAU;QACpB,WAAW,EAAE,iBAAiB;KACjC,CAAC;GACW,eAAe,CAG3B;SAHY,eAAe"}
+{"version":3,"file":"control3.js","sourceRoot":"","sources":["control3.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,SAAS,EAAC,MAAM,eAAe,CAAC;AAMxC,MAAM;;;YAJL,SAAS,SAAC;gBACP,QAAQ,EAAE,UAAU;gBACpB,WAAW,EAAE,iBAAiB;aACjC"}

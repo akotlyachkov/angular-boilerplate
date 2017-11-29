@@ -3,8 +3,7 @@ const webpack = require('webpack'),
 
 module.exports = {
     entry: {
-        browser: './client/app/_browser/index.js',
-        libs: './client/app/_browser/libs.js'
+        browser: './client/app/_browser/index.js'
     },
     output: {
         filename: '[name].js',
@@ -12,42 +11,25 @@ module.exports = {
     },
     module: {
         rules: [
+
             {
                 test: /\.js$/,
+                exclude: /node_modules|ngfactory/,
                 use: ["source-map-loader"],
                 enforce: "pre"
-            },
-            {
-                test: /\.js$/,
-                loaders: ['angular2-template-loader'],
-                include: path.join(__dirname, 'client/app'),
-            },
-            {
-                test: /\.html$/,
-                loader: 'html-loader',
-                options: {
-                    minimize: false
-                }
-            }
-        ]
+            }]
     },
-    plugins: [
-        new webpack.optimize.CommonsChunkPlugin({
-            name:'common',
-            minChunks: 2,
-            chunks: [
-                'browser',
-                'libs'
-            ]
+    /*plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {warnings: false},
+            output: {comments: false}
         })
-    ],
+    ],*/
     resolve: {
-        extensions: ['.js', '.html'],
         modules: [
             path.resolve(__dirname, 'node_modules'),
             path.resolve(__dirname, 'client/app')
         ]
-
     },
     devtool: 'source-map',
 };

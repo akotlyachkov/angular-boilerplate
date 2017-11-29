@@ -1,43 +1,39 @@
 const express = require('express'),
     app = express(),
     path = require('path'),
-    config = require('./config.json'),
-    minifyHTML = require('express-minify-html'),
-    mode = process.env.mode || 'browser';
+    server = require('./server'),
+    browser = require('./browser');
 
+app.use('/css', express.static(path.join(__dirname, 'build')));
+app.use('/js', express.static(path.join(__dirname, 'build')));
 app.use('/favicon', express.static(path.join(__dirname, 'favicon')));
 app.use('/images', express.static(path.join(__dirname, 'images')));
 app.use('/fonts', express.static(path.join(__dirname, 'fonts')));
 
-if (mode === 'server') {
-    const engine = require('./build/server').expressEngine;
-    app.engine('html', engine);
-    app.set('view engine', 'html');
-    app.set('views', path.join(__dirname, 'views'));
-    //app.use(minifyHTML({override: true}))
-}
-
-app.use('/', function (req, res) {
-    if (mode === 'server') {
-        res.render('index', {
-            req: req,
-            res: res
-        });
+app.use('/',  function (req, res, next) {
+    let ua = req.headers['user-agent'];
+    if (/bot|google|yandex|mail\.ru|bing|embedly|guzzlehttp|validator|vk\.com|facebook|slurp|tumblr|undefined|seopult|mailru|mrpc|ok\.ru/i.test(ua)) {
+        console.log('робот: ' + ua + ' url: ' + req.url);
+        server(req, res);
     }
     else {
-        res.sendFile('index.html', {root: path.join(__dirname, 'views')})
+        console.log('юзер: ' + ua + ' url: ' + req.url);
+        browser(req, res);
     }
 });
 
 app.use(function (req, res, next) {
     console.error("сработало 404");
-    res.redirect('/not-found?url=' + req.url);
+    //res.redirect('/error?url='+req.url);
 });
 
 app.use(function (err, req, res, next) {
     console.error(err.message);
-    //console.error(err.stack);
+    console.error(err.stack);
+    err.userMessage = err.userMessage || 'На сервере произошла ошибка';
+    if (res.status() == 200)
+        res.status(500);
+    res.send(err.userMessage);
 });
-
 
 module.exports = app;

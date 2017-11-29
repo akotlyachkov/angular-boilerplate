@@ -1,9 +1,10 @@
 import 'zone.js/dist/zone-node';
-import 'reflect-metadata';
-import { ServerAppModule } from './module';
+import { ServerAppModuleNgFactory } from './module.ngfactory';
 import { ngExpressEngine } from '@nguniversal/express-engine/src/main';
+import { enableProdMode } from "@angular/core";
+enableProdMode();
 let expressEngine = ngExpressEngine({
-    bootstrap: ServerAppModule
+    bootstrap: ServerAppModuleNgFactory
 });
 export { expressEngine };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLHdCQUF3QixDQUFDO0FBQ2hDLE9BQU8sa0JBQWtCLENBQUM7QUFFMUIsT0FBTyxFQUFDLGVBQWUsRUFBQyxNQUFNLFVBQVUsQ0FBQztBQUN6QyxPQUFPLEVBQUMsZUFBZSxFQUFDLE1BQU0sc0NBQXNDLENBQUM7QUFFckUsSUFBSSxhQUFhLEdBQUcsZUFBZSxDQUFDO0lBQ2hDLFNBQVMsRUFBRSxlQUFlO0NBQzdCLENBQUMsQ0FBQztBQUNILE9BQU8sRUFBQyxhQUFhLEVBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAnem9uZS5qcy9kaXN0L3pvbmUtbm9kZSc7XHJcbmltcG9ydCAncmVmbGVjdC1tZXRhZGF0YSc7XHJcblxyXG5pbXBvcnQge1NlcnZlckFwcE1vZHVsZX0gZnJvbSAnLi9tb2R1bGUnO1xyXG5pbXBvcnQge25nRXhwcmVzc0VuZ2luZX0gZnJvbSAnQG5ndW5pdmVyc2FsL2V4cHJlc3MtZW5naW5lL3NyYy9tYWluJztcclxuXHJcbmxldCBleHByZXNzRW5naW5lID0gbmdFeHByZXNzRW5naW5lKHtcclxuICAgIGJvb3RzdHJhcDogU2VydmVyQXBwTW9kdWxlXHJcbn0pO1xyXG5leHBvcnQge2V4cHJlc3NFbmdpbmV9OyJdfQ==
+//# sourceMappingURL=index.js.map

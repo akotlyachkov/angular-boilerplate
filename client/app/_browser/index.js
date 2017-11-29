@@ -1,7 +1,8 @@
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { BrowserAppModule } from "./module";
+import 'zone.js';
+import { platformBrowser } from '@angular/platform-browser';
+import { BrowserAppModuleNgFactory } from "./module.ngfactory";
 function start() {
-    platformBrowserDynamic().bootstrapModule(BrowserAppModule);
+    platformBrowser().bootstrapModuleFactory(BrowserAppModuleNgFactory);
 }
 document.addEventListener('DOMContentLoaded', start, false);
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQSxPQUFPLEVBQUMsc0JBQXNCLEVBQUMsTUFBTSxtQ0FBbUMsQ0FBQztBQUN6RSxPQUFPLEVBQUMsZ0JBQWdCLEVBQUMsTUFBTSxVQUFVLENBQUM7QUFFMUM7SUFDSSxzQkFBc0IsRUFBRSxDQUFDLGVBQWUsQ0FBQyxnQkFBZ0IsQ0FBQyxDQUFDO0FBQy9ELENBQUM7QUFFRCxRQUFRLENBQUMsZ0JBQWdCLENBQUMsa0JBQWtCLEVBQUUsS0FBSyxFQUFFLEtBQUssQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbmltcG9ydCB7cGxhdGZvcm1Ccm93c2VyRHluYW1pY30gZnJvbSAnQGFuZ3VsYXIvcGxhdGZvcm0tYnJvd3Nlci1keW5hbWljJztcclxuaW1wb3J0IHtCcm93c2VyQXBwTW9kdWxlfSBmcm9tIFwiLi9tb2R1bGVcIjtcclxuXHJcbmZ1bmN0aW9uIHN0YXJ0KCkge1xyXG4gICAgcGxhdGZvcm1Ccm93c2VyRHluYW1pYygpLmJvb3RzdHJhcE1vZHVsZShCcm93c2VyQXBwTW9kdWxlKTtcclxufVxyXG5cclxuZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcignRE9NQ29udGVudExvYWRlZCcsIHN0YXJ0LCBmYWxzZSk7XHJcbiJdfQ==
+//# sourceMappingURL=index.js.map
