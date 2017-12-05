@@ -1,6 +1,7 @@
 {
     "global-param": "global-test-value",
     "system":{
+        "domain":"http://localhost:3000",
         "port":3000
     }
 }

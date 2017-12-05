@@ -1,15 +1,16 @@
-import {Injectable} from "@angular/core";
+import {Inject, Injectable, Optional} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
 
 @Injectable()
 export class DataProvider{
-    constructor(private http:HttpClient){
-
+    constructor(@Optional() @Inject('serverUrl') protected serverUrl: string,
+                private http:HttpClient){
+        console.log(`получено с сервера "${serverUrl}"`);
     }
     test(){
-        return this.http.post<any>('http://dl-002.integrum.net:403/api/test',{})
+        return this.http.post<any>('/api/test',{})
     }
     config(){
-        return this.http.get<any>('http://dl-002.integrum.net:403/api/config')
+        return this.http.get<any>('/api/config')
     }
 }

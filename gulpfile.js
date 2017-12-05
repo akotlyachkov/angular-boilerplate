@@ -10,9 +10,6 @@ let gulp = require('gulp'),
 let commonCss = [
         'client/styles/common.scss',
     ],
-    loadingCss = [
-        'client/styles/loading.scss',
-    ],
     injectJs = [
         'client/build/browser.js'
     ],
@@ -20,8 +17,7 @@ let commonCss = [
         'client/build/styles.css'
     ],
     pugs = [
-        'client/views/browser.pug',
-        'client/views/server.pug'
+        'client/views/index.pug'
     ],
     destination = 'client/build';
 
@@ -35,14 +31,6 @@ gulp.task('commonCss', function () {
         .pipe(gulp.dest(destination))
 });
 
-gulp.task('loadingCss', function () {
-    return gulp
-        .src(loadingCss)
-        .pipe(sass().on('error', sass.logError))
-        .pipe(concat('loading.css'))
-        .pipe(clean())
-        .pipe(gulp.dest(destination))
-});
 
 gulp.task('inject', function () {
     const cssFiles = gulp.src(injectCss);
@@ -61,4 +49,4 @@ gulp.task('watch', ['commonCss'], function () {
     ], ['default'])
 });
 
-gulp.task('default',['commonCss','loadingCss','inject']);
+gulp.task('default',['commonCss','inject']);
