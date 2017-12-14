@@ -21,9 +21,7 @@ app.use('/api', serverApp);
 app.use('/', clientApp);
 app.set('mode', process.env.mode || 'browser');
 app.set('port', process.env.PORT || config.system.port || '3000');
-app.use(function (err, req, res, next) {
-    console.log(1)
-});
+
 server.listen(app.get('port'), function () {
     console.log(`Приложение запущено http://localhost:${app.get('port')} в режиме ${app.get('mode')}`);
 });

@@ -1,9 +1,10 @@
 import 'zone.js'
+
 import {platformBrowser} from '@angular/platform-browser';
-import {BrowserAppModuleNgFactory} from "./module.ngfactory";
+import {BrowserAppModule} from "./module";
 
 function start() {
-    platformBrowser().bootstrapModuleFactory(BrowserAppModuleNgFactory);
+    platformBrowser().bootstrapModule(BrowserAppModule);
 }
 
 document.addEventListener('DOMContentLoaded', start, false);

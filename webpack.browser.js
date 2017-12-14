@@ -3,11 +3,11 @@ const webpack = require('webpack'),
 
 module.exports = {
     entry: {
-        browser: './client/app/_browser/index.js'
+        browser: './build/compiled/client/app/_browser/index.js'
     },
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, 'client/build')
+        path: path.resolve(__dirname, 'build')
     },
     module: {
         rules: [
@@ -19,16 +19,10 @@ module.exports = {
                 enforce: "pre"
             }]
     },
-    /*plugins: [
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {warnings: false},
-            output: {comments: false}
-        })
-    ],*/
     resolve: {
         modules: [
             path.resolve(__dirname, 'node_modules'),
-            path.resolve(__dirname, 'client/app')
+            path.resolve(__dirname, 'build/compiled/client/app')
         ]
     },
     devtool: 'source-map',

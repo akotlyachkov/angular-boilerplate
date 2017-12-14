@@ -10,7 +10,9 @@
         "watch gulp": "gulp watch",
         "gulp": "gulp",
         "ngc": "ngc -p tsconfig.json",
+        "ngc release": "ngc -p tsconfig.release.json",
         "webpack browser": "webpack --config webpack.browser.js",
+        "webpack browser release": "webpack --config webpack.browser.release.js",
         "webpack server": "webpack --config webpack.server.js"
     },
     "repository": {

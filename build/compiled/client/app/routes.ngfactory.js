@@ -1,0 +1,21 @@
+import * as i0 from "@angular/core";
+import * as i1 from "./routes";
+import * as i2 from "./layouts/master1/master1.ngfactory";
+import * as i3 from "./pages/index/index.ngfactory";
+import * as i4 from "./pages/page1/page1.ngfactory";
+import * as i5 from "./layouts/master2/master2.ngfactory";
+import * as i6 from "./pages/page2/page2.ngfactory";
+import * as i7 from "./controls/control3/control3.ngfactory";
+import * as i8 from "./controls/control4/control4.ngfactory";
+import * as i9 from "@angular/router";
+import * as i10 from "@angular/common";
+import * as i11 from "./layouts/master1/master1";
+import * as i12 from "./pages/index/index";
+import * as i13 from "./pages/page1/page1";
+import * as i14 from "./layouts/master2/master2";
+import * as i15 from "./pages/page2/page2";
+import * as i16 from "./controls/control3/control3";
+import * as i17 from "./controls/control4/control4";
+var RoutingModuleNgFactory = i0.ɵcmf(i1.RoutingModule, [], function (_l) { return i0.ɵmod([i0.ɵmpd(512, i0.ComponentFactoryResolver, i0.ɵCodegenComponentFactoryResolver, [[8, [i2.Master1LayoutNgFactory, i3.IndexPageNgFactory, i4.Page1PageNgFactory, i5.Master2LayoutNgFactory, i6.Page2PageNgFactory, i7.Control3ControlNgFactory, i8.Control4ControlNgFactory]], [3, i0.ComponentFactoryResolver], i0.NgModuleRef]), i0.ɵmpd(5120, i9.ActivatedRoute, i9.ɵf, [i9.Router]), i0.ɵmpd(4608, i9.NoPreloading, i9.NoPreloading, []), i0.ɵmpd(6144, i9.PreloadingStrategy, null, [i9.NoPreloading]), i0.ɵmpd(135680, i9.RouterPreloader, i9.RouterPreloader, [i9.Router, i0.NgModuleFactoryLoader, i0.Compiler, i0.Injector, i9.PreloadingStrategy]), i0.ɵmpd(4608, i9.PreloadAllModules, i9.PreloadAllModules, []), i0.ɵmpd(5120, i0.NgProbeToken, function () { return [i9.ɵb()]; }, []), i0.ɵmpd(4608, i9.ɵg, i9.ɵg, [i0.Injector]), i0.ɵmpd(5120, i0.APP_INITIALIZER, function (p0_0) { return [i9.ɵh(p0_0)]; }, [i9.ɵg]), i0.ɵmpd(5120, i9.ROUTER_INITIALIZER, i9.ɵi, [i9.ɵg]), i0.ɵmpd(5120, i0.APP_BOOTSTRAP_LISTENER, function (p0_0) { return [p0_0]; }, [i9.ROUTER_INITIALIZER]), i0.ɵmpd(1024, i9.ɵa, i9.ɵd, [[3, i9.Router]]), i0.ɵmpd(512, i9.UrlSerializer, i9.DefaultUrlSerializer, []), i0.ɵmpd(512, i9.ChildrenOutletContexts, i9.ChildrenOutletContexts, []), i0.ɵmpd(256, i9.ROUTER_CONFIGURATION, {}, []), i0.ɵmpd(1024, i10.LocationStrategy, i9.ɵc, [i10.PlatformLocation, [2, i10.APP_BASE_HREF], i9.ROUTER_CONFIGURATION]), i0.ɵmpd(512, i10.Location, i10.Location, [i10.LocationStrategy]), i0.ɵmpd(512, i0.NgModuleFactoryLoader, i0.SystemJsNgModuleLoader, [i0.Compiler, [2, i0.SystemJsNgModuleLoaderConfig]]), i0.ɵmpd(1024, i9.ROUTES, function () { return [[{ path: "", component: i11.Master1Layout, children: [{ path: "", component: i12.IndexPage }, { path: "page1", component: i13.Page1Page }] }, { path: "page2", component: i14.Master2Layout, children: [{ path: "", component: i15.Page2Page, children: [{ path: "subpage3", component: i16.Control3Control }, { path: "subpage4", component: i17.Control4Control }] }] }]]; }, []), i0.ɵmpd(1024, i9.Router, i9.ɵe, [i0.ApplicationRef, i9.UrlSerializer, i9.ChildrenOutletContexts, i10.Location, i0.Injector, i0.NgModuleFactoryLoader, i0.Compiler, i9.ROUTES, i9.ROUTER_CONFIGURATION, [2, i9.UrlHandlingStrategy], [2, i9.RouteReuseStrategy]]), i0.ɵmpd(512, i9.RouterModule, i9.RouterModule, [[2, i9.ɵa], [2, i9.Router]]), i0.ɵmpd(512, i1.RoutingModule, i1.RoutingModule, [])]); });
+export { RoutingModuleNgFactory as RoutingModuleNgFactory };
+//# sourceMappingURL=routes.ngfactory.js.map

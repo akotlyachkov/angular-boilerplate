@@ -3,8 +3,7 @@ const express = require('express'),
     path = require('path'),
     config = require('../config.json'),
     minifyHTML = require('express-minify-html'),
-    serverjs = require('./build/server'),
-    expressEngine = serverjs.expressEngine;
+    expressEngine = require('./build/server').expressEngine;
 
 app.use('/css', express.static(path.join(__dirname, 'build')));
 app.use('/js', express.static(path.join(__dirname, 'build')));
