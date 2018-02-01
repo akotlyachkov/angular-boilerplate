@@ -9,6 +9,7 @@ import {ControlsModule} from "./controls/module";
 import {CommonModule} from "@angular/common";
 import {DataProvider} from "./providers/data";
 import {HttpClientModule} from "@angular/common/http";
+import {ServerResponseService} from "./services/status";
 
 @NgModule({
     declarations: [
@@ -25,7 +26,8 @@ import {HttpClientModule} from "@angular/common/http";
     ],
     providers: [
         CommunicateService,
-        DataProvider
+        DataProvider,
+        ServerResponseService
     ],
     exports: [
         DefaultLayout

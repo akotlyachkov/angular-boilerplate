@@ -4,28 +4,32 @@ let gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     clean = require('gulp-clean-css'),
+    path = require('path'),
     sass = require('gulp-sass'),
+    del = require('del'),
     pug = require('gulp-pug');
 
 let commonCss = [
         'client/styles/common.scss',
     ],
     injectJs = [
-        'client/build/browser.js'
+        'build/common.js',
+        'build/libs.js',
+        'build/browser.js'
     ],
     injectCss = [
-        'client/build/styles.css'
+        'build/styles.css'
     ],
     pugs = [
         'client/views/index.pug'
     ],
-    destination = 'client/build';
+    destination = 'build';
 
 gulp.task('commonCss', function () {
     return gulp
         .src(commonCss)
         //.pipe(sourcemaps.init())
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({importer: tildaResolver}).on('error', sass.logError))
         .pipe(concat('styles.css'))
         .pipe(clean())
         .pipe(gulp.dest(destination))
@@ -36,8 +40,8 @@ gulp.task('inject', function () {
     const cssFiles = gulp.src(injectCss);
     const jsFiles = gulp.src(injectJs);
     return gulp.src(pugs)
-        .pipe(inject(cssFiles, {ignorePath: 'client/build',addPrefix:'css'}))
-        .pipe(inject(jsFiles, {ignorePath: 'client/build',addPrefix:'js'}))
+        .pipe(inject(cssFiles, {ignorePath: 'build', addPrefix: 'styles'}))
+        .pipe(inject(jsFiles, {ignorePath: 'build', addPrefix: 'scripts'}))
         .pipe(pug())
         .pipe(gulp.dest('client/views'));
 });
@@ -49,4 +53,18 @@ gulp.task('watch', ['commonCss'], function () {
     ], ['default'])
 });
 
-gulp.task('default',['commonCss','inject']);
+gulp.task('default', ['commonCss', 'inject']);
+
+function tildaResolver(url, prev, done) {
+    if (url[0] === '~') {
+        url = path.resolve('node_modules', url.substr(1));
+    }
+    return { file: url };
+}
+gulp.task('clean:files', function () {
+    return del([
+        'client/app/**/*.js',
+        'client/app/**/*.map',
+        'client/app/**/*.json',
+    ])
+});

@@ -1,10 +1,10 @@
 const express = require('express'),
     app = express(),
-    config = require('./config');
-    configClient = require('../config');
+    config = require('../config');
 
 app.get('/config', function (req, res, next) {
-    res.send(configClient);
+    console.log('/congig uid:'+req.uid);
+    res.send(config);
 });
 
 app.post('/test', function (req, res, next) {

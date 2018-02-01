@@ -3,24 +3,31 @@ const express = require('express'),
     path = require('path'),
     config = require('../config.json'),
     minifyHTML = require('express-minify-html'),
-    expressEngine = require('./build/server').expressEngine;
+    expressEngine = require('../build/server').expressEngine;
 
-app.use('/css', express.static(path.join(__dirname, 'build')));
-app.use('/js', express.static(path.join(__dirname, 'build')));
+app.use('/styles', express.static(path.join(__dirname, '../build')));
+app.use('/scripts', express.static(path.join(__dirname, '../build')));
 app.use('/favicon', express.static(path.join(__dirname, 'favicon')));
 app.use('/images', express.static(path.join(__dirname, 'images')));
 app.use('/fonts', express.static(path.join(__dirname, 'fonts')));
 
-let prodivers = [
-    {provide: 'serverUrl', useValue: config.system.domain}
-];
 
-app.engine('html', expressEngine(prodivers));
-app.set('view engine', 'html');
-app.set('views', path.join(__dirname, 'views'));
-app.use(minifyHTML({override: true}));
 
 app.use('/', function (req, res) {
+
+    let prodivers = [
+        {provide: 'serverUrl', useValue: config.system.domain},
+        {provide: 'expressRequest', useValue: req}
+    ];
+
+    app.engine('html', expressEngine(prodivers));
+    app.set('view engine', 'html');
+    app.set('views', path.join(__dirname, 'views'));
+    app.use(minifyHTML({
+        override: true,
+        htmlMinifier: {removeAttributeQuotes: false}
+    }));
+
     res.render('index', {req, res});
 });
 

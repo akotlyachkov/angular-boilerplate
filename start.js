@@ -4,6 +4,7 @@ const express = require('express'),
     compression = require('compression'),
     bodyParser = require('body-parser'),
     app = express(),
+    cookies = require('./cookies'),
     http = require('http'),
     server = http.createServer(app),
     config = require('./config'),
@@ -17,8 +18,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(compression());
 
 
-app.use('/api', serverApp);
-app.use('/', clientApp);
+app.use('/api', cookies.test, serverApp);
+app.use('/', cookies.set, clientApp);
 app.set('mode', process.env.mode || 'browser');
 app.set('port', process.env.PORT || config.system.port || '3000');
 

@@ -1,10 +1,10 @@
 import 'zone.js'
 
-import {platformBrowser} from '@angular/platform-browser';
+import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
 import {BrowserAppModule} from "./module";
 
 function start() {
-    platformBrowser().bootstrapModule(BrowserAppModule);
+    platformBrowserDynamic().bootstrapModule(BrowserAppModule);
 }
 
 document.addEventListener('DOMContentLoaded', start, false);
