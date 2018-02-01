@@ -10,7 +10,7 @@ export class UniversalInterceptor implements HttpInterceptor {
     }
 
     intercept(req: HttpRequest<any>, next: HttpHandler) {
-        
+
         let serverReq = !this.serverUrl ? req : req.clone({
             url: `${this.serverUrl}${req.url}`,
             headers: req.headers.set('Cookie', this.expressRequest.headers.cookie)
