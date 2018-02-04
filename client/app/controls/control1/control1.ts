@@ -14,16 +14,15 @@ import {Observable} from "rxjs/Observable";
     `
 })
 export class Control1Control {
+
+    @select('counter')
     readonly count$: Observable<number>;
 
     constructor(private communicateService: CommunicateService,
                 private ngRedux: NgRedux<IAppState>) {
-        this.count$ = ngRedux.select<number>('counter');
     }
 
-    ngDoCheck (e){
-        console.log('ngDoCheck ');
-    }
+
     onClick() {
         this.ngRedux.dispatch({type: 'INCREMENT'});
     }

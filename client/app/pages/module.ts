@@ -5,6 +5,7 @@ import {IndexPage} from "./index/index";
 import {ControlsModule} from "../controls/module";
 import {RouterModule} from "@angular/router";
 import {Page3Page} from "./page3/page3";
+import {CommonModule} from "@angular/common";
 @NgModule({
     declarations: [
         IndexPage,
@@ -13,6 +14,7 @@ import {Page3Page} from "./page3/page3";
         Page3Page
     ],
     imports: [
+        CommonModule,
         RouterModule,
         ControlsModule
     ],

@@ -11,6 +11,9 @@ export class DataProvider{
         return this.http.post<any>('/api/test',{})
     }
     config(){
-        return this.http.get<any>('/api/config',{withCredentials: true})
+        return this.http.get<any>('/api/config')
+    }
+    random(){
+        return this.http.post<any>('/api/random',{})
     }
 }

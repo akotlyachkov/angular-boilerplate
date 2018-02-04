@@ -1,7 +1,8 @@
-<div class="navbar">
-    <ul class="list-unstyled">
-        <li *ngFor="let nav of navs" routerLinkActive="active" [routerLinkActiveOptions]="{exact:nav.path=='/'}">
-            <a routerLink="{{nav.path}}">{{nav.name}}</a>
+<div class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" routerLink="/">Boilerplate</a>
+    <ul class="navbar-nav navbar-expand-sm mr-auto">
+        <li class="nav-item" *ngFor="let nav of navs" routerLinkActive="active" [routerLinkActiveOptions]="'{exact: true}'">
+            <a class="nav-link" routerLink="{{nav.path}}">{{nav.name}}</a>
         </li>
     </ul>
 </div>

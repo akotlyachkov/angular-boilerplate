@@ -1,9 +1,11 @@
 interface IAppState {
-    counter: number;
+    counter?: number;
+    random?: number;
 }
 
 let initialState: IAppState = {
-    counter: 0
+    counter: 0,
+    random: 0
 };
 
 export {

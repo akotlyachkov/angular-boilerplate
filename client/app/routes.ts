@@ -7,23 +7,26 @@ import {Master1Layout} from "./layouts/master1/master1";
 import {Master2Layout} from "./layouts/master2/master2";
 import {Control3Control} from "./controls/control3/control3";
 import {Control4Control} from "./controls/control4/control4";
+import {Page3Page} from "./pages/page3/page3";
 
 const routes: Routes = [
     {
         path: '', component: Master1Layout, children: [
-        {path: '', component: IndexPage},
-        {path: 'page1', component: Page1Page}
-    ]
+            {path: '', component: IndexPage},
+            {path: 'page1', component: Page1Page},
+            {path: 'page3', component: Page3Page}
+        ]
     },
     {
+
         path: 'page2', component: Master2Layout, children: [
-        {
-            path: '', component: Page2Page, children: [
-            {path: 'subpage3', component: Control3Control},
-            {path: 'subpage4', component: Control4Control},
+            {
+                path: '', component: Page2Page, children: [
+                    {path: 'subpage3', component: Control3Control},
+                    {path: 'subpage4', component: Control4Control},
+                ]
+            },
         ]
-        },
-    ]
     }
 
 ];

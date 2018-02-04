@@ -28,10 +28,11 @@ let commonCss = [
 gulp.task('commonCss', function () {
     return gulp
         .src(commonCss)
-        //.pipe(sourcemaps.init())
+        .pipe(sourcemaps.init())
         .pipe(sass({importer: tildaResolver}).on('error', sass.logError))
         .pipe(concat('styles.css'))
         .pipe(clean())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(destination))
 });
 

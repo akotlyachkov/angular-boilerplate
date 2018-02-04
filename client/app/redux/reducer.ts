@@ -6,6 +6,8 @@ export function rootReducer(state: IAppState = initialState, action: Action): IA
         case 'INCREMENT':
             let newCount = state.counter + 1;
             return {counter: newCount};
+        case 'RANDOM':
+            return {...state, random: action.payload};
         default:
             return state
     }
