@@ -1,15 +1,18 @@
-import {IAppState, initialState} from "./state";
-import {Action} from "redux";
+import {Action} from "@ngrx/store";
+import {DECREMENT, INCREMENT, RESET} from "./actions";
 
-export function rootReducer(state: IAppState = initialState, action: Action): IAppState {
+export function counter(state: number = 0, action: Action) {
     switch (action.type) {
-        case 'INCREMENT':
-            let newCount = state.counter + 1;
-            return {counter: newCount};
-        case 'RANDOM':
-            return {...state, random: action.payload};
-        default:
-            return state
-    }
+        case INCREMENT:
+            return state + 1;
 
+        case DECREMENT:
+            return state - 1;
+
+        case RESET:
+            return 0;
+
+        default:
+            return state;
+    }
 }

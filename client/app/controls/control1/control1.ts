@@ -1,7 +1,5 @@
 import {Component, Input} from "@angular/core";
 import {CommunicateService} from "../../services/communicate";
-import {IAppState} from "../../redux/state";
-import {NgRedux, select} from '@angular-redux/store';
 import {Observable} from "rxjs/Observable";
 
 @Component({
@@ -15,16 +13,15 @@ import {Observable} from "rxjs/Observable";
 })
 export class Control1Control {
 
-    @select('counter')
     readonly count$: Observable<number>;
 
     constructor(private communicateService: CommunicateService,
-                private ngRedux: NgRedux<IAppState>) {
+               ) {
     }
 
 
     onClick() {
-        this.ngRedux.dispatch({type: 'INCREMENT'});
+
     }
 
     @Input()

@@ -10,10 +10,8 @@ import {CommonModule} from "@angular/common";
 import {DataProvider} from "./providers/data";
 import {HttpClientModule} from "@angular/common/http";
 import {ServerResponseService} from "./services/status";
-import {NgRedux, NgReduxModule, DevToolsExtension } from '@angular-redux/store';
-import {IAppState, initialState} from "./redux/state";
-import {rootReducer} from "./redux/reducer";
-import {createLogger} from 'redux-logger';
+import {StoreModule} from "@ngrx/store";
+import {counter} from "./redux/reducer";
 
 @NgModule({
     declarations: [
@@ -27,7 +25,7 @@ import {createLogger} from 'redux-logger';
         ControlsModule,
         PagesModule,
         RoutingModule,
-        NgReduxModule
+        StoreModule.forRoot({ counter })
     ],
     providers: [
         CommunicateService,
@@ -39,8 +37,5 @@ import {createLogger} from 'redux-logger';
     ]
 })
 export class AppModule {
-    constructor(ngRedux: NgRedux<IAppState>,
-                devTools: DevToolsExtension) {
-        ngRedux.configureStore(rootReducer, initialState, [createLogger()],[devTools.enhancer()]);
-    }
+
 }
