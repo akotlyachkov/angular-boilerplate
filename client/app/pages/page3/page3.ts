@@ -1,9 +1,9 @@
 import {Component} from "@angular/core";
 
 import {Observable} from "rxjs/Observable";
-import {select, Store} from "@ngrx/store";
-import {DECREMENT, INCREMENT, RESET} from "../../redux/actions";
-import {AppState} from "../../redux/state";
+import {DECREMENT, INCREMENT, reset} from "../../redux/actions";
+import {IAppState} from "../../redux/state";
+import {NgRedux} from "@angular-redux/store";
 
 
 @Component({
@@ -14,9 +14,9 @@ import {AppState} from "../../redux/state";
                 <h2 class="col-xs-12">Страница 3</h2>
                 <div class="col-12">
                     <button (click)="increment()">Increment</button>
-                    <div>Current Count: {{ counter | async }}</div>
+                    <div>Current Count: {{ counter$ | async }}</div>
                     <button (click)="decrement()">Decrement</button>
-
+                    <hr>
                     <button (click)="reset()">Reset Counter</button>
                 </div>
             </div>
@@ -25,21 +25,21 @@ import {AppState} from "../../redux/state";
 })
 export class Page3Page {
 
-    counter: Observable<number>;
+    counter$: Observable<number>;
 
-    constructor(private store: Store<AppState>) {
-        this.counter = store.pipe(select('counter'));
+    constructor(private ngRedux: NgRedux<IAppState>) {
+        this.counter$ = ngRedux.select('counter')
     }
 
     increment() {
-        this.store.dispatch({type: INCREMENT});
+        this.ngRedux.dispatch({type: INCREMENT});
     }
 
     decrement() {
-        this.store.dispatch({type: DECREMENT});
+        this.ngRedux.dispatch({type: DECREMENT});
     }
 
     reset() {
-        this.store.dispatch({type: RESET});
+        this.ngRedux.dispatch(reset({counter:3}));
     }
 }

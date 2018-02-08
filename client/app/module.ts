@@ -10,14 +10,15 @@ import {CommonModule} from "@angular/common";
 import {DataProvider} from "./providers/data";
 import {HttpClientModule} from "@angular/common/http";
 import {ServerResponseService} from "./services/status";
-import {StoreModule} from "@ngrx/store";
-import {counter} from "./redux/reducer";
+import {StoreModule} from "./redux/module";
 
 @NgModule({
     declarations: [
         DefaultLayout,
         Master1Layout,
         Master2Layout
+
+
     ],
     imports: [
         CommonModule,
@@ -25,7 +26,7 @@ import {counter} from "./redux/reducer";
         ControlsModule,
         PagesModule,
         RoutingModule,
-        StoreModule.forRoot({ counter })
+        StoreModule
     ],
     providers: [
         CommunicateService,
